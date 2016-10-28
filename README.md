@@ -1,4 +1,4 @@
-Documentação - Estruturas de Dados
+Estruturas de Dados
 ========================================
 
 Este documento contém informações sobre a implementação
