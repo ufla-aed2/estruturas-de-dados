@@ -12,3 +12,6 @@ As seguintes EDs são apresentadas neste documento:
 - Pilha: implementação com arranjos (PilhaVet.hpp).
 - Fila: implementação com arranjos (FilaVet.hpp).
 
+A documentação das EDs descritas acima foram geradas por meio do software
+[Doxygen] (http://www.stack.nl/~dimitri/doxygen/) e podem ser visualizadas 
+em: [https://ufla-aed2.github.io/](https://ufla-aed2.github.io/) 
