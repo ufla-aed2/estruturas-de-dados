@@ -1,5 +1,5 @@
-/**
-\mainpage Documentação - Estruturas de Dados 
+Documentação - Estruturas de Dados {#mainpage}
+========================================
 
 Este documento contém informações sobre a implementação
 e o uso das Estruturas de Dados (EDs) contempladas na disciplina
@@ -9,9 +9,6 @@ sob a responsabilidade do Prof. Paulo Afonso. Os slides das aulas estão dispon�
 
 As seguintes EDs são apresentadas neste documento:
 
-- [Pilha](@ref PilhaVet.hpp).: implementação com arranjos.
-- [Fila](@ref FilaVet.hpp).: implementação com arranjos.
+- Pilha: implementação com arranjos (PilhaVet.hpp).
+- Fila: implementação com arranjos (FilaVet.hpp).
 
-
-
-*/
