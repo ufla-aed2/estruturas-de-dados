@@ -9,9 +9,6 @@ sob a responsabilidade do Prof. Paulo Afonso. Os slides das aulas estão dispon�
 
 As seguintes EDs são apresentadas neste documento:
 
-- Pilha: implementação com arranjos (PilhaVet.hpp).
-- Fila: implementação com arranjos (FilaVet.hpp).
+- Pilha: implementação com arranjos (pilhavet.hpp).
+- Fila: implementação com arranjos (filavet.hpp).
 
-A documentação das EDs descritas acima foi gerada por meio do software
-[Doxygen] (http://www.stack.nl/~dimitri/doxygen/) e pode ser visualizada 
-em: [https://ufla-aed2.github.io/](https://ufla-aed2.github.io/). 

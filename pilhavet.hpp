@@ -1,5 +1,5 @@
 /**
- * \file PilhaVet.hpp
+ * \file pilhavet.hpp
  * \author Prof. Paulo Afonso (pauloa.junior@dcc.ufla.br)
  * \date Outubro, 2016
  * \brief Interface do TAD PilhaVet
