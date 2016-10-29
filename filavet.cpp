@@ -1,6 +1,6 @@
 #include <assert.h> /**< Necessário para uso da macro "assert" */
 #include <cstdlib> /**< Necessário para uso do NULL */
-#include "FilaVet.hpp"
+#include "filavet.hpp"
 
 using namespace std;
 
