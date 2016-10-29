@@ -22,7 +22,7 @@
  * \brief Declaração opaca da estrutura de uma pilha.
  * 
  * Isso significa que os detalhes de implementação desta estrutura estão escondidos do usuário do TAD. 
- * A definição da estrutura PilhaVet encontra-se no arquivo \file PilhaVet.cpp.
+ * A definição da estrutura PilhaVet encontra-se no arquivo \file pilhavet.cpp.
  */
 struct PilhaVet;
 
@@ -32,7 +32,7 @@ struct PilhaVet;
  * Exemplo de uso:
  * \code {.cpp}
  * #include<cstdlib>
- * #include "PilhaVet.hpp"
+ * #include "pilhavet.hpp"
 
  * int main() {
  *     PilhaVet *p = criar_pilha();
@@ -50,7 +50,7 @@ PilhaVet* criar_pilha();
  * Exemplo de uso:
  * \code {.cpp}
  * #include<cstdlib>
- * #include "PilhaVet.hpp"
+ * #include "pilhavet.hpp"
  * 
  * int main() {
  *     PilhaVet *p = criar_pilha();
@@ -76,7 +76,7 @@ void liberar_pilha(PilhaVet* p);
  * \code {.cpp}
  * #include<cstdlib>
  * #include<iostream>
- * #include "PilhaVet.hpp"
+ * #include "pilhavet.hpp"
  * 
  * using namespace std;
  *
@@ -112,7 +112,7 @@ bool estah_vazia(PilhaVet* p);
  * \code {.cpp}
  * #include<cstdlib>
  * #include<iostream>
- * #include "PilhaVet.hpp"
+ * #include "pilhavet.hpp"
  * 
  * using namespace std;
  *
@@ -148,7 +148,7 @@ bool estah_cheia(PilhaVet* p);
  * \code {.cpp}
  * #include<cstdlib>
  * #include<iostream>
- * #include "PilhaVet.hpp"
+ * #include "pilhavet.hpp"
  * 
  * using namespace std;
  *
@@ -188,7 +188,7 @@ void empilhar(PilhaVet* p, int item);
  * \code {.cpp}
  * #include<cstdlib>
  * #include<iostream>
- * #include "PilhaVet.hpp"
+ * #include "pilhavet.hpp"
  * 
  * using namespace std;
  *
@@ -232,7 +232,7 @@ int desempilhar(PilhaVet* p);
  * \code {.cpp}
  * #include<cstdlib>
  * #include<iostream>
- * #include "PilhaVet.hpp"
+ * #include "pilhavet.hpp"
  * 
  * using namespace std;
  *

@@ -22,7 +22,7 @@
  * \brief Declaração opaca da estrutura de uma fila.
  * 
  * Isso significa que os detalhes de implementação desta estrutura estão escondidos do usuário do TAD. 
- * A definição da estrutura FilaVet encontra-se no arquivo \file FilaVet.cpp.
+ * A definição da estrutura FilaVet encontra-se no arquivo \file filavet.cpp.
  */
 struct FilaVet;
 
@@ -32,7 +32,7 @@ struct FilaVet;
  * Exemplo de uso:
  * \code {.cpp}
  * #include<cstdlib>
- * #include "FilaVet.hpp"
+ * #include "filavet.hpp"
 
  * int main() {
  *     FilaVet *f = criar_fila();
@@ -50,7 +50,7 @@ FilaVet* criar_fila();
  * Exemplo de uso:
  * \code {.cpp}
  * #include<cstdlib>
- * #include "FilaVet.hpp"
+ * #include "filavet.hpp"
  * 
  * int main() {
  *     FilaVet *f = criar_fila();
@@ -76,7 +76,7 @@ void liberar_fila(FilaVet* f);
  * \code {.cpp}
  * #include<cstdlib>
  * #include<iostream>
- * #include "FilaVet.hpp"
+ * #include "filavet.hpp"
  * 
  * using namespace std;
  *
@@ -112,7 +112,7 @@ bool estah_vazia(FilaVet* f);
  * \code {.cpp}
  * #include<cstdlib>
  * #include<iostream>
- * #include "FilaVet.hpp"
+ * #include "filavet.hpp"
  * 
  * using namespace std;
  *
@@ -148,7 +148,7 @@ bool estah_cheia(FilaVet* f);
  * \code {.cpp}
  * #include<cstdlib>
  * #include<iostream>
- * #include "FilaVet.hpp"
+ * #include "filavet.hpp"
  * 
  * using namespace std;
  *
@@ -188,7 +188,7 @@ void inserir(FilaVet* f, int item);
  * \code {.cpp}
  * #include<cstdlib>
  * #include<iostream>
- * #include "FilaVet.hpp"
+ * #include "filavet.hpp"
  * 
  * using namespace std;
  *
@@ -232,7 +232,7 @@ int remover(FilaVet* f);
  * \code {.cpp}
  * #include<cstdlib>
  * #include<iostream>
- * #include "FilaVet.hpp"
+ * #include "filavet.hpp"
  * 
  * using namespace std;
  *
