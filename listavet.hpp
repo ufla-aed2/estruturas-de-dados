@@ -310,11 +310,14 @@ int obter(ListaVet* li, int pos);
  *
  * int main() {
  *     ListaVet *li = criar_lista();
- *     cout << obter_tamanho(li) << endl;
  *     inserir(li, 3, 0);
  *     inserir(li, 2, 0);
  *     inserir(li, 1, 0);
- *     cout << obter_tamanho(li) << endl;
+ *     int n = obter_tamanho(li);
+ *     for(int i = 0; i < n; i++) {
+ *         cout << obter(li, i) << " ";
+ *     }
+ *     cout << endl << "Tamanho: " << n << endl;
  *     liberar_lista(li);
  *     return EXIT_SUCCESS;
  * }  
@@ -323,8 +326,8 @@ int obter(ListaVet* li, int pos);
  * Saída esperada:
  * 
  * \code {.unparsed}
- *     0
- *     3
+ *     1 2 3
+ *     Tamanho: 3
  * \endcode
  * 
  * \pre O ponteiro \p *li deve ser diferente de \p NULL.
