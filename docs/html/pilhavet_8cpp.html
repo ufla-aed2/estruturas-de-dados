@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>Estruturas de Dados: eds/pilhavet.hpp File Reference</title>
+<title>Estruturas de Dados: eds/pilhavet.cpp File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -46,54 +46,48 @@
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#define-members">Macros</a> &#124;
+<a href="#nested-classes">Data Structures</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
-<div class="title">pilhavet.hpp File Reference</div>  </div>
+<div class="title">pilhavet.cpp File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-
-<p>Interface do TAD <a class="el" href="struct_pilha_vet.html" title="Declaração opaca da estrutura de uma pilha. ">PilhaVet</a>.  
-<a href="#details">More...</a></p>
-
-<p><a href="pilhavet_8hpp_source.html">Go to the source code of this file.</a></p>
-<table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
-Macros</h2></td></tr>
-<tr class="memitem:ac0cf2902c27019004022f788b44d0f5e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac0cf2902c27019004022f788b44d0f5e"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pilhavet_8hpp.html#ac0cf2902c27019004022f788b44d0f5e">TAM_MAX</a>&#160;&#160;&#160;100</td></tr>
-<tr class="memdesc:ac0cf2902c27019004022f788b44d0f5e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Define a quantidade máxima de elementos suportada pela pilha. <br /></td></tr>
-<tr class="separator:ac0cf2902c27019004022f788b44d0f5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<div class="textblock"><code>#include &lt;assert.h&gt;</code><br />
+<code>#include &lt;cstdlib&gt;</code><br />
+<code>#include &quot;<a class="el" href="pilhavet_8hpp_source.html">pilhavet.hpp</a>&quot;</code><br />
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Data Structures</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_pilha_vet.html">PilhaVet</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Declaração opaca da estrutura de uma pilha.  <a href="struct_pilha_vet.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:af37367bbfaaf5a46c07d7205e4f61ae6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_pilha_vet.html">PilhaVet</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pilhavet_8hpp.html#af37367bbfaaf5a46c07d7205e4f61ae6">criar_pilha</a> ()</td></tr>
+<tr class="memitem:af37367bbfaaf5a46c07d7205e4f61ae6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_pilha_vet.html">PilhaVet</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pilhavet_8cpp.html#af37367bbfaaf5a46c07d7205e4f61ae6">criar_pilha</a> ()</td></tr>
 <tr class="memdesc:af37367bbfaaf5a46c07d7205e4f61ae6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cria dinamicamente uma pilha vazia e retorna o endereço onde ela se encontra alocada.  <a href="#af37367bbfaaf5a46c07d7205e4f61ae6">More...</a><br /></td></tr>
 <tr class="separator:af37367bbfaaf5a46c07d7205e4f61ae6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab219500fd4823146dc885cda9dc2cd55"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pilhavet_8hpp.html#ab219500fd4823146dc885cda9dc2cd55">liberar_pilha</a> (<a class="el" href="struct_pilha_vet.html">PilhaVet</a> *p)</td></tr>
-<tr class="memdesc:ab219500fd4823146dc885cda9dc2cd55"><td class="mdescLeft">&#160;</td><td class="mdescRight">Libera o espaço de memória anteriormente reservado para a pilha.  <a href="#ab219500fd4823146dc885cda9dc2cd55">More...</a><br /></td></tr>
-<tr class="separator:ab219500fd4823146dc885cda9dc2cd55"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5f0035d521fd3fe7b5652645d3ce7137"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pilhavet_8hpp.html#a5f0035d521fd3fe7b5652645d3ce7137">estah_vazia</a> (<a class="el" href="struct_pilha_vet.html">PilhaVet</a> *p)</td></tr>
-<tr class="memdesc:a5f0035d521fd3fe7b5652645d3ce7137"><td class="mdescLeft">&#160;</td><td class="mdescRight">Verifica se a pilha está vazia.  <a href="#a5f0035d521fd3fe7b5652645d3ce7137">More...</a><br /></td></tr>
-<tr class="separator:a5f0035d521fd3fe7b5652645d3ce7137"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a086b573273b3ae81dc87cc2cee2f7c2b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pilhavet_8hpp.html#a086b573273b3ae81dc87cc2cee2f7c2b">estah_cheia</a> (<a class="el" href="struct_pilha_vet.html">PilhaVet</a> *p)</td></tr>
-<tr class="memdesc:a086b573273b3ae81dc87cc2cee2f7c2b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Verifica se a pilha está cheia.  <a href="#a086b573273b3ae81dc87cc2cee2f7c2b">More...</a><br /></td></tr>
-<tr class="separator:a086b573273b3ae81dc87cc2cee2f7c2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6f75593d89ed978f98704262a1e68ffa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pilhavet_8hpp.html#a6f75593d89ed978f98704262a1e68ffa">empilhar</a> (<a class="el" href="struct_pilha_vet.html">PilhaVet</a> *p, int item)</td></tr>
-<tr class="memdesc:a6f75593d89ed978f98704262a1e68ffa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Insere um novo elemento na pilha.  <a href="#a6f75593d89ed978f98704262a1e68ffa">More...</a><br /></td></tr>
-<tr class="separator:a6f75593d89ed978f98704262a1e68ffa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab9fb19906ee99669783db70dfb36639f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pilhavet_8hpp.html#ab9fb19906ee99669783db70dfb36639f">desempilhar</a> (<a class="el" href="struct_pilha_vet.html">PilhaVet</a> *p)</td></tr>
-<tr class="memdesc:ab9fb19906ee99669783db70dfb36639f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove e retorna o elemento do topo da pilha.  <a href="#ab9fb19906ee99669783db70dfb36639f">More...</a><br /></td></tr>
-<tr class="separator:ab9fb19906ee99669783db70dfb36639f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a505181df5b5b40dadff69ef17f5e43f4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pilhavet_8hpp.html#a505181df5b5b40dadff69ef17f5e43f4">obter_topo</a> (<a class="el" href="struct_pilha_vet.html">PilhaVet</a> *p)</td></tr>
-<tr class="memdesc:a505181df5b5b40dadff69ef17f5e43f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Apenas retorna o elemento do topo da pilha.  <a href="#a505181df5b5b40dadff69ef17f5e43f4">More...</a><br /></td></tr>
-<tr class="separator:a505181df5b5b40dadff69ef17f5e43f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac2b277691e1d9dbe092881fdba6094c3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pilhavet_8cpp.html#ac2b277691e1d9dbe092881fdba6094c3">liberar_pilha</a> (<a class="el" href="struct_pilha_vet.html">PilhaVet</a> *pilha)</td></tr>
+<tr class="memdesc:ac2b277691e1d9dbe092881fdba6094c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Libera o espaço de memória anteriormente reservado para a pilha.  <a href="#ac2b277691e1d9dbe092881fdba6094c3">More...</a><br /></td></tr>
+<tr class="separator:ac2b277691e1d9dbe092881fdba6094c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4de2759447f8086358d6e57c783e2d6c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pilhavet_8cpp.html#a4de2759447f8086358d6e57c783e2d6c">estah_cheia</a> (<a class="el" href="struct_pilha_vet.html">PilhaVet</a> *pilha)</td></tr>
+<tr class="memdesc:a4de2759447f8086358d6e57c783e2d6c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Verifica se a pilha está cheia.  <a href="#a4de2759447f8086358d6e57c783e2d6c">More...</a><br /></td></tr>
+<tr class="separator:a4de2759447f8086358d6e57c783e2d6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b5089e4cd23be688ea3d38de0924727"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pilhavet_8cpp.html#a5b5089e4cd23be688ea3d38de0924727">estah_vazia</a> (<a class="el" href="struct_pilha_vet.html">PilhaVet</a> *pilha)</td></tr>
+<tr class="memdesc:a5b5089e4cd23be688ea3d38de0924727"><td class="mdescLeft">&#160;</td><td class="mdescRight">Verifica se a pilha está vazia.  <a href="#a5b5089e4cd23be688ea3d38de0924727">More...</a><br /></td></tr>
+<tr class="separator:a5b5089e4cd23be688ea3d38de0924727"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0881f4afdd04ecd4ba2d53bfc9132bcf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pilhavet_8cpp.html#a0881f4afdd04ecd4ba2d53bfc9132bcf">empilhar</a> (<a class="el" href="struct_pilha_vet.html">PilhaVet</a> *pilha, int item)</td></tr>
+<tr class="memdesc:a0881f4afdd04ecd4ba2d53bfc9132bcf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Insere um novo elemento na pilha.  <a href="#a0881f4afdd04ecd4ba2d53bfc9132bcf">More...</a><br /></td></tr>
+<tr class="separator:a0881f4afdd04ecd4ba2d53bfc9132bcf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9638660fc55b9e3c07ddd53252f6fca1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pilhavet_8cpp.html#a9638660fc55b9e3c07ddd53252f6fca1">desempilhar</a> (<a class="el" href="struct_pilha_vet.html">PilhaVet</a> *pilha)</td></tr>
+<tr class="memdesc:a9638660fc55b9e3c07ddd53252f6fca1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove e retorna o elemento do topo da pilha.  <a href="#a9638660fc55b9e3c07ddd53252f6fca1">More...</a><br /></td></tr>
+<tr class="separator:a9638660fc55b9e3c07ddd53252f6fca1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a8bbc4d1eb011b8425ac3c5f7934727"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pilhavet_8cpp.html#a2a8bbc4d1eb011b8425ac3c5f7934727">obter_topo</a> (<a class="el" href="struct_pilha_vet.html">PilhaVet</a> *pilha)</td></tr>
+<tr class="memdesc:a2a8bbc4d1eb011b8425ac3c5f7934727"><td class="mdescLeft">&#160;</td><td class="mdescRight">Apenas retorna o elemento do topo da pilha.  <a href="#a2a8bbc4d1eb011b8425ac3c5f7934727">More...</a><br /></td></tr>
+<tr class="separator:a2a8bbc4d1eb011b8425ac3c5f7934727"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Interface do TAD <a class="el" href="struct_pilha_vet.html" title="Declaração opaca da estrutura de uma pilha. ">PilhaVet</a>. </p>
-<dl class="section author"><dt>Author</dt><dd>Prof. Paulo Afonso (<a href="#" onclick="location.href='mai'+'lto:'+'pau'+'lo'+'a.j'+'un'+'ior'+'@d'+'cc.'+'uf'+'la.'+'br'; return false;">paulo<span style="display: none;">.nosp@m.</span>a.ju<span style="display: none;">.nosp@m.</span>nior@<span style="display: none;">.nosp@m.</span>dcc.<span style="display: none;">.nosp@m.</span>ufla.<span style="display: none;">.nosp@m.</span>br</a>) </dd></dl>
-<dl class="section date"><dt>Date</dt><dd>Outubro, 2016 Disponibiliza as funções necessárias para manipulação da estrutura de dados Pilha. </dd></dl>
-</div><h2 class="groupheader">Function Documentation</h2>
+<div class="textblock"></div><h2 class="groupheader">Function Documentation</h2>
 <a class="anchor" id="af37367bbfaaf5a46c07d7205e4f61ae6"></a>
 <div class="memitem">
 <div class="memproto">
@@ -112,7 +106,7 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ab9fb19906ee99669783db70dfb36639f"></a>
+<a class="anchor" id="a9638660fc55b9e3c07ddd53252f6fca1"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -142,7 +136,7 @@ A pilha não deve estar vazia.</dd></dl>
 
 </div>
 </div>
-<a class="anchor" id="a6f75593d89ed978f98704262a1e68ffa"></a>
+<a class="anchor" id="a0881f4afdd04ecd4ba2d53bfc9132bcf"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -182,7 +176,7 @@ A pilha não deve estar cheia.</dd></dl>
 
 </div>
 </div>
-<a class="anchor" id="a086b573273b3ae81dc87cc2cee2f7c2b"></a>
+<a class="anchor" id="a4de2759447f8086358d6e57c783e2d6c"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -209,7 +203,7 @@ A pilha não deve estar cheia.</dd></dl>
 
 </div>
 </div>
-<a class="anchor" id="a5f0035d521fd3fe7b5652645d3ce7137"></a>
+<a class="anchor" id="a5b5089e4cd23be688ea3d38de0924727"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -236,7 +230,7 @@ A pilha não deve estar cheia.</dd></dl>
 
 </div>
 </div>
-<a class="anchor" id="ab219500fd4823146dc885cda9dc2cd55"></a>
+<a class="anchor" id="ac2b277691e1d9dbe092881fdba6094c3"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -263,7 +257,7 @@ A pilha não deve estar cheia.</dd></dl>
 
 </div>
 </div>
-<a class="anchor" id="a505181df5b5b40dadff69ef17f5e43f4"></a>
+<a class="anchor" id="a2a8bbc4d1eb011b8425ac3c5f7934727"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">

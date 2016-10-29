@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>Estruturas de Dados: eds/filavet.hpp File Reference</title>
+<title>Estruturas de Dados: eds/filavet.cpp File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -46,54 +46,51 @@
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#define-members">Macros</a> &#124;
+<a href="#nested-classes">Data Structures</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
-<div class="title">filavet.hpp File Reference</div>  </div>
+<div class="title">filavet.cpp File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-
-<p>Interface do TAD <a class="el" href="struct_fila_vet.html" title="Declaração opaca da estrutura de uma fila. ">FilaVet</a>.  
-<a href="#details">More...</a></p>
-
-<p><a href="filavet_8hpp_source.html">Go to the source code of this file.</a></p>
-<table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
-Macros</h2></td></tr>
-<tr class="memitem:ac0cf2902c27019004022f788b44d0f5e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac0cf2902c27019004022f788b44d0f5e"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="filavet_8hpp.html#ac0cf2902c27019004022f788b44d0f5e">TAM_MAX</a>&#160;&#160;&#160;100</td></tr>
-<tr class="memdesc:ac0cf2902c27019004022f788b44d0f5e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Define a quantidade máxima de elementos suportada pela fila. <br /></td></tr>
-<tr class="separator:ac0cf2902c27019004022f788b44d0f5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<div class="textblock"><code>#include &lt;assert.h&gt;</code><br />
+<code>#include &lt;cstdlib&gt;</code><br />
+<code>#include &quot;<a class="el" href="filavet_8hpp_source.html">filavet.hpp</a>&quot;</code><br />
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Data Structures</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_fila_vet.html">FilaVet</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Declaração opaca da estrutura de uma fila.  <a href="struct_fila_vet.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:af580c6464e06e571640ba4a51978dcad"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_fila_vet.html">FilaVet</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="filavet_8hpp.html#af580c6464e06e571640ba4a51978dcad">criar_fila</a> ()</td></tr>
+<tr class="memitem:a2686e59075e065051bb481d32d9e7597"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2686e59075e065051bb481d32d9e7597"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>incrementar</b> (int i)</td></tr>
+<tr class="separator:a2686e59075e065051bb481d32d9e7597"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af580c6464e06e571640ba4a51978dcad"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_fila_vet.html">FilaVet</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="filavet_8cpp.html#af580c6464e06e571640ba4a51978dcad">criar_fila</a> ()</td></tr>
 <tr class="memdesc:af580c6464e06e571640ba4a51978dcad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cria dinamicamente uma fila vazia e retorna o endereço onde ela se encontra alocada.  <a href="#af580c6464e06e571640ba4a51978dcad">More...</a><br /></td></tr>
 <tr class="separator:af580c6464e06e571640ba4a51978dcad"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af94cee8b514af0eabb737283948ac38c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="filavet_8hpp.html#af94cee8b514af0eabb737283948ac38c">liberar_fila</a> (<a class="el" href="struct_fila_vet.html">FilaVet</a> *f)</td></tr>
-<tr class="memdesc:af94cee8b514af0eabb737283948ac38c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Libera o espaço de memória anteriormente reservado para a fila.  <a href="#af94cee8b514af0eabb737283948ac38c">More...</a><br /></td></tr>
-<tr class="separator:af94cee8b514af0eabb737283948ac38c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af0e87395f0474f04c3ba5f76ed0a7f0e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="filavet_8hpp.html#af0e87395f0474f04c3ba5f76ed0a7f0e">estah_vazia</a> (<a class="el" href="struct_fila_vet.html">FilaVet</a> *f)</td></tr>
-<tr class="memdesc:af0e87395f0474f04c3ba5f76ed0a7f0e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Verifica se a fila está vazia.  <a href="#af0e87395f0474f04c3ba5f76ed0a7f0e">More...</a><br /></td></tr>
-<tr class="separator:af0e87395f0474f04c3ba5f76ed0a7f0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac827cd7817dadff610cc9c21daebc5b6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="filavet_8hpp.html#ac827cd7817dadff610cc9c21daebc5b6">estah_cheia</a> (<a class="el" href="struct_fila_vet.html">FilaVet</a> *f)</td></tr>
-<tr class="memdesc:ac827cd7817dadff610cc9c21daebc5b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Verifica se a fila está cheia.  <a href="#ac827cd7817dadff610cc9c21daebc5b6">More...</a><br /></td></tr>
-<tr class="separator:ac827cd7817dadff610cc9c21daebc5b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5e389423dff8fd59bd3e25e72dbb72b2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="filavet_8hpp.html#a5e389423dff8fd59bd3e25e72dbb72b2">inserir</a> (<a class="el" href="struct_fila_vet.html">FilaVet</a> *f, int item)</td></tr>
-<tr class="memdesc:a5e389423dff8fd59bd3e25e72dbb72b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Insere um novo elemento no final da fila.  <a href="#a5e389423dff8fd59bd3e25e72dbb72b2">More...</a><br /></td></tr>
-<tr class="separator:a5e389423dff8fd59bd3e25e72dbb72b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a38ce2fd71be43f50861b4774d43cc970"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="filavet_8hpp.html#a38ce2fd71be43f50861b4774d43cc970">remover</a> (<a class="el" href="struct_fila_vet.html">FilaVet</a> *f)</td></tr>
-<tr class="memdesc:a38ce2fd71be43f50861b4774d43cc970"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove e retorna o elemento do início da fila.  <a href="#a38ce2fd71be43f50861b4774d43cc970">More...</a><br /></td></tr>
-<tr class="separator:a38ce2fd71be43f50861b4774d43cc970"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa4b45ee18135c300277b3c3c9fe8efba"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="filavet_8hpp.html#aa4b45ee18135c300277b3c3c9fe8efba">obter_inicio</a> (<a class="el" href="struct_fila_vet.html">FilaVet</a> *f)</td></tr>
-<tr class="memdesc:aa4b45ee18135c300277b3c3c9fe8efba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Apenas retorna o elemento do início da fila.  <a href="#aa4b45ee18135c300277b3c3c9fe8efba">More...</a><br /></td></tr>
-<tr class="separator:aa4b45ee18135c300277b3c3c9fe8efba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a01e531ed31c12fbc8f8b50003ea94f89"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="filavet_8cpp.html#a01e531ed31c12fbc8f8b50003ea94f89">liberar_fila</a> (<a class="el" href="struct_fila_vet.html">FilaVet</a> *fila)</td></tr>
+<tr class="memdesc:a01e531ed31c12fbc8f8b50003ea94f89"><td class="mdescLeft">&#160;</td><td class="mdescRight">Libera o espaço de memória anteriormente reservado para a fila.  <a href="#a01e531ed31c12fbc8f8b50003ea94f89">More...</a><br /></td></tr>
+<tr class="separator:a01e531ed31c12fbc8f8b50003ea94f89"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6d8288fd5482349b84b68ff35faeb39"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="filavet_8cpp.html#ab6d8288fd5482349b84b68ff35faeb39">estah_cheia</a> (<a class="el" href="struct_fila_vet.html">FilaVet</a> *fila)</td></tr>
+<tr class="memdesc:ab6d8288fd5482349b84b68ff35faeb39"><td class="mdescLeft">&#160;</td><td class="mdescRight">Verifica se a fila está cheia.  <a href="#ab6d8288fd5482349b84b68ff35faeb39">More...</a><br /></td></tr>
+<tr class="separator:ab6d8288fd5482349b84b68ff35faeb39"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a19b891b87e9a6757aca036de750b9a11"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="filavet_8cpp.html#a19b891b87e9a6757aca036de750b9a11">estah_vazia</a> (<a class="el" href="struct_fila_vet.html">FilaVet</a> *fila)</td></tr>
+<tr class="memdesc:a19b891b87e9a6757aca036de750b9a11"><td class="mdescLeft">&#160;</td><td class="mdescRight">Verifica se a fila está vazia.  <a href="#a19b891b87e9a6757aca036de750b9a11">More...</a><br /></td></tr>
+<tr class="separator:a19b891b87e9a6757aca036de750b9a11"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a202344af135a37d6c24323e97cef2c7b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="filavet_8cpp.html#a202344af135a37d6c24323e97cef2c7b">inserir</a> (<a class="el" href="struct_fila_vet.html">FilaVet</a> *fila, int item)</td></tr>
+<tr class="memdesc:a202344af135a37d6c24323e97cef2c7b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Insere um novo elemento no final da fila.  <a href="#a202344af135a37d6c24323e97cef2c7b">More...</a><br /></td></tr>
+<tr class="separator:a202344af135a37d6c24323e97cef2c7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a254f02d2dc7266e0054e1fe96bf3aa53"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="filavet_8cpp.html#a254f02d2dc7266e0054e1fe96bf3aa53">remover</a> (<a class="el" href="struct_fila_vet.html">FilaVet</a> *fila)</td></tr>
+<tr class="memdesc:a254f02d2dc7266e0054e1fe96bf3aa53"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove e retorna o elemento do início da fila.  <a href="#a254f02d2dc7266e0054e1fe96bf3aa53">More...</a><br /></td></tr>
+<tr class="separator:a254f02d2dc7266e0054e1fe96bf3aa53"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae5574d6b8c1a7e589fc19a2d4bbb5516"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="filavet_8cpp.html#ae5574d6b8c1a7e589fc19a2d4bbb5516">obter_inicio</a> (<a class="el" href="struct_fila_vet.html">FilaVet</a> *fila)</td></tr>
+<tr class="memdesc:ae5574d6b8c1a7e589fc19a2d4bbb5516"><td class="mdescLeft">&#160;</td><td class="mdescRight">Apenas retorna o elemento do início da fila.  <a href="#ae5574d6b8c1a7e589fc19a2d4bbb5516">More...</a><br /></td></tr>
+<tr class="separator:ae5574d6b8c1a7e589fc19a2d4bbb5516"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Interface do TAD <a class="el" href="struct_fila_vet.html" title="Declaração opaca da estrutura de uma fila. ">FilaVet</a>. </p>
-<dl class="section author"><dt>Author</dt><dd>Prof. Paulo Afonso (<a href="#" onclick="location.href='mai'+'lto:'+'pau'+'lo'+'a.j'+'un'+'ior'+'@d'+'cc.'+'uf'+'la.'+'br'; return false;">paulo<span style="display: none;">.nosp@m.</span>a.ju<span style="display: none;">.nosp@m.</span>nior@<span style="display: none;">.nosp@m.</span>dcc.<span style="display: none;">.nosp@m.</span>ufla.<span style="display: none;">.nosp@m.</span>br</a>) </dd></dl>
-<dl class="section date"><dt>Date</dt><dd>Outubro, 2016 Disponibiliza as funções necessárias para manipulação da estrutura de dados Fila. </dd></dl>
-</div><h2 class="groupheader">Function Documentation</h2>
+<div class="textblock"></div><h2 class="groupheader">Function Documentation</h2>
 <a class="anchor" id="af580c6464e06e571640ba4a51978dcad"></a>
 <div class="memitem">
 <div class="memproto">
@@ -112,7 +109,7 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ac827cd7817dadff610cc9c21daebc5b6"></a>
+<a class="anchor" id="ab6d8288fd5482349b84b68ff35faeb39"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -139,7 +136,7 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="af0e87395f0474f04c3ba5f76ed0a7f0e"></a>
+<a class="anchor" id="a19b891b87e9a6757aca036de750b9a11"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -166,7 +163,7 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a5e389423dff8fd59bd3e25e72dbb72b2"></a>
+<a class="anchor" id="a202344af135a37d6c24323e97cef2c7b"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -206,7 +203,7 @@ A fila não deve estar cheia.</dd></dl>
 
 </div>
 </div>
-<a class="anchor" id="af94cee8b514af0eabb737283948ac38c"></a>
+<a class="anchor" id="a01e531ed31c12fbc8f8b50003ea94f89"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -233,7 +230,7 @@ A fila não deve estar cheia.</dd></dl>
 
 </div>
 </div>
-<a class="anchor" id="aa4b45ee18135c300277b3c3c9fe8efba"></a>
+<a class="anchor" id="ae5574d6b8c1a7e589fc19a2d4bbb5516"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -263,7 +260,7 @@ A fila não deve estar vazia.</dd></dl>
 
 </div>
 </div>
-<a class="anchor" id="a38ce2fd71be43f50861b4774d43cc970"></a>
+<a class="anchor" id="a254f02d2dc7266e0054e1fe96bf3aa53"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
