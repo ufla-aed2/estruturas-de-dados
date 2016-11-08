@@ -11,6 +11,7 @@ As seguintes EDs são apresentadas neste documento:
 
 - Pilha: implementação com arranjos (pilhavet.hpp).
 - Fila: implementação com arranjos (filavet.hpp).
+- Fila Dupla: implementação com arranjos (filadvet.hpp).
 - Lista: implementação com arranjos (listavet.hpp).
 
 A documentação das EDs descritas acima foi gerada por meio do software
