@@ -9,7 +9,7 @@ sob a responsabilidade do Prof. Paulo Afonso. Os slides das aulas estão dispon�
 
 As seguintes EDs são apresentadas neste documento:
 
-- Pilha: implementação com arranjos (pilhavet.hpp).
+- Pilha: implementação com arranjos (pilhavet.hpp) e implementação com estruturas encadeadas (pilhaenc.hpp).
 - Fila: implementação com arranjos (filavet.hpp).
 - Fila Dupla: implementação com arranjos (filadvet.hpp).
 - Lista: implementação com arranjos (listavet.hpp).
