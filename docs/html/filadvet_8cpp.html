@@ -1,0 +1,563 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.8"/>
+<title>Estruturas de Dados: Referência do Arquivo eds/array/filadvet.cpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Estruturas de Dados
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.8.8 -->
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Página&#160;Principal</span></a></li>
+      <li><a href="annotated.html"><span>Estruturas&#160;de&#160;Dados</span></a></li>
+      <li class="current"><a href="files.html"><span>Arquivos</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&#160;de&#160;Arquivos</span></a></li>
+      <li><a href="globals.html"><span>Globais</span></a></li>
+    </ul>
+  </div>
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_a3f2bd107d1269366d90e558a516eb2f.html">eds</a></li><li class="navelem"><a class="el" href="dir_4b66626ddbb6f4660ab0f98eecab99a6.html">array</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Estruturas de Dados</a> &#124;
+<a href="#func-members">Funções</a>  </div>
+  <div class="headertitle">
+<div class="title">Referência do Arquivo filadvet.cpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;assert.h&gt;</code><br />
+<code>#include &lt;cstdlib&gt;</code><br />
+<code>#include &quot;<a class="el" href="filadvet_8hpp_source.html">filadvet.hpp</a>&quot;</code><br />
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Estruturas de Dados</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_fila_d_vet.html">FilaDVet</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Declaração opaca da estrutura de uma fila.  <a href="struct_fila_d_vet.html#details">Mais...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Funções</h2></td></tr>
+<tr class="memitem:a427343f9327a5b2a5d3fac22c6bb256c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_fila_d_vet.html">FilaDVet</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="filadvet_8cpp.html#a427343f9327a5b2a5d3fac22c6bb256c">criar_fila_d</a> ()</td></tr>
+<tr class="memdesc:a427343f9327a5b2a5d3fac22c6bb256c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cria dinamicamente uma fila vazia e retorna o endereço onde ela se encontra alocada.  <a href="#a427343f9327a5b2a5d3fac22c6bb256c">Mais...</a><br /></td></tr>
+<tr class="separator:a427343f9327a5b2a5d3fac22c6bb256c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af3c6c26496134bd5a4d37a9e45968d98"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="filadvet_8cpp.html#af3c6c26496134bd5a4d37a9e45968d98">liberar_fila</a> (<a class="el" href="struct_fila_d_vet.html">FilaDVet</a> *fila)</td></tr>
+<tr class="memdesc:af3c6c26496134bd5a4d37a9e45968d98"><td class="mdescLeft">&#160;</td><td class="mdescRight">Libera o espaço de memória anteriormente reservado para a fila.  <a href="#af3c6c26496134bd5a4d37a9e45968d98">Mais...</a><br /></td></tr>
+<tr class="separator:af3c6c26496134bd5a4d37a9e45968d98"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71c46cb8540dff51f064b098ce25d3c5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="filadvet_8cpp.html#a71c46cb8540dff51f064b098ce25d3c5">estah_cheia</a> (<a class="el" href="struct_fila_d_vet.html">FilaDVet</a> *fila)</td></tr>
+<tr class="memdesc:a71c46cb8540dff51f064b098ce25d3c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Verifica se a fila está cheia.  <a href="#a71c46cb8540dff51f064b098ce25d3c5">Mais...</a><br /></td></tr>
+<tr class="separator:a71c46cb8540dff51f064b098ce25d3c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaccf062f5ae84e95537c1d7b961290a3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="filadvet_8cpp.html#aaccf062f5ae84e95537c1d7b961290a3">estah_vazia</a> (<a class="el" href="struct_fila_d_vet.html">FilaDVet</a> *fila)</td></tr>
+<tr class="memdesc:aaccf062f5ae84e95537c1d7b961290a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Verifica se a fila está vazia.  <a href="#aaccf062f5ae84e95537c1d7b961290a3">Mais...</a><br /></td></tr>
+<tr class="separator:aaccf062f5ae84e95537c1d7b961290a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed14de21f590ffb7057f33dc283bd02e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="filadvet_8cpp.html#aed14de21f590ffb7057f33dc283bd02e">inserir_no_fim</a> (<a class="el" href="struct_fila_d_vet.html">FilaDVet</a> *fila, int item)</td></tr>
+<tr class="memdesc:aed14de21f590ffb7057f33dc283bd02e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Insere um novo elemento no final da fila.  <a href="#aed14de21f590ffb7057f33dc283bd02e">Mais...</a><br /></td></tr>
+<tr class="separator:aed14de21f590ffb7057f33dc283bd02e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adfd6272c89af0d689dd6c964b535d44b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="filadvet_8cpp.html#adfd6272c89af0d689dd6c964b535d44b">remover_do_inicio</a> (<a class="el" href="struct_fila_d_vet.html">FilaDVet</a> *fila)</td></tr>
+<tr class="memdesc:adfd6272c89af0d689dd6c964b535d44b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove e retorna o elemento do início da fila.  <a href="#adfd6272c89af0d689dd6c964b535d44b">Mais...</a><br /></td></tr>
+<tr class="separator:adfd6272c89af0d689dd6c964b535d44b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a777986e815ca5f2975fcf670e5e33278"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="filadvet_8cpp.html#a777986e815ca5f2975fcf670e5e33278">obter_inicio</a> (<a class="el" href="struct_fila_d_vet.html">FilaDVet</a> *fila)</td></tr>
+<tr class="memdesc:a777986e815ca5f2975fcf670e5e33278"><td class="mdescLeft">&#160;</td><td class="mdescRight">Apenas retorna o elemento do início da fila.  <a href="#a777986e815ca5f2975fcf670e5e33278">Mais...</a><br /></td></tr>
+<tr class="separator:a777986e815ca5f2975fcf670e5e33278"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6fc690c54c439b5c9cf1d575aa065a43"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="filadvet_8cpp.html#a6fc690c54c439b5c9cf1d575aa065a43">inserir_no_inicio</a> (<a class="el" href="struct_fila_d_vet.html">FilaDVet</a> *fila, int item)</td></tr>
+<tr class="memdesc:a6fc690c54c439b5c9cf1d575aa065a43"><td class="mdescLeft">&#160;</td><td class="mdescRight">Insere um novo elemento no início da fila. Como se trata de uma fila dupla, essa operação é permitida.  <a href="#a6fc690c54c439b5c9cf1d575aa065a43">Mais...</a><br /></td></tr>
+<tr class="separator:a6fc690c54c439b5c9cf1d575aa065a43"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93080657b870a1a5574a8fb50faf1a85"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="filadvet_8cpp.html#a93080657b870a1a5574a8fb50faf1a85">remover_do_fim</a> (<a class="el" href="struct_fila_d_vet.html">FilaDVet</a> *fila)</td></tr>
+<tr class="memdesc:a93080657b870a1a5574a8fb50faf1a85"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove e retorna o elemento do fim da fila. Como se trata de uma fila dupla, essa operação é permitida.  <a href="#a93080657b870a1a5574a8fb50faf1a85">Mais...</a><br /></td></tr>
+<tr class="separator:a93080657b870a1a5574a8fb50faf1a85"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae326d1b7251d360ea4e3f44542321f43"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="filadvet_8cpp.html#ae326d1b7251d360ea4e3f44542321f43">obter_fim</a> (<a class="el" href="struct_fila_d_vet.html">FilaDVet</a> *fila)</td></tr>
+<tr class="memdesc:ae326d1b7251d360ea4e3f44542321f43"><td class="mdescLeft">&#160;</td><td class="mdescRight">Apenas retorna o elemento do fim da fila. Como se trata de uma fila dupla, essa operação é permitida.  <a href="#ae326d1b7251d360ea4e3f44542321f43">Mais...</a><br /></td></tr>
+<tr class="separator:ae326d1b7251d360ea4e3f44542321f43"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Descrição Detalhada</h2>
+<div class="textblock"></div><h2 class="groupheader">Funções</h2>
+<a class="anchor" id="a427343f9327a5b2a5d3fac22c6bb256c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_fila_d_vet.html">FilaDVet</a>* criar_fila_d </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Cria dinamicamente uma fila vazia e retorna o endereço onde ela se encontra alocada. </p>
+<p>Exemplo de uso: </p><div class="fragment"><div class="line"><span class="preprocessor">#include&lt;cstdlib&gt;</span></div>
+<div class="line"><span class="preprocessor">#include &quot;<a class="code" href="filadvet_8hpp.html">filadvet.hpp</a>&quot;</span></div>
+<div class="line"></div>
+<div class="line"><span class="keywordtype">int</span> main() {</div>
+<div class="line">    <a class="code" href="struct_fila_d_vet.html">FilaDVet</a> *f = <a class="code" href="filadvet_8cpp.html#a427343f9327a5b2a5d3fac22c6bb256c">criar_fila_d</a>();</div>
+<div class="line">    <span class="keywordflow">return</span> EXIT_SUCCESS;</div>
+<div class="line">}  </div>
+</div><!-- fragment --><dl class="section return"><dt>Retorna</dt><dd>O endereço de memória da fila alocada dinamicamente. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a71c46cb8540dff51f064b098ce25d3c5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool estah_cheia </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_fila_d_vet.html">FilaDVet</a> *&#160;</td>
+          <td class="paramname"><em>f</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Verifica se a fila está cheia. </p>
+<p>Exemplo de uso: </p><div class="fragment"><div class="line"><span class="preprocessor">#include&lt;cstdlib&gt;</span></div>
+<div class="line"><span class="preprocessor">#include&lt;iostream&gt;</span></div>
+<div class="line"><span class="preprocessor">#include &quot;<a class="code" href="filadvet_8hpp.html">filadvet.hpp</a>&quot;</span></div>
+<div class="line"></div>
+<div class="line"><span class="keyword">using namespace </span><a class="code" href="namespacestd.html">std</a>;</div>
+<div class="line"></div>
+<div class="line"><span class="keywordtype">int</span> main() {</div>
+<div class="line">    <a class="code" href="struct_fila_d_vet.html">FilaDVet</a> *f = <a class="code" href="filadvet_8cpp.html#a427343f9327a5b2a5d3fac22c6bb256c">criar_fila_d</a>();</div>
+<div class="line">    <span class="keywordflow">if</span> (!<a class="code" href="filadvet_8cpp.html#a71c46cb8540dff51f064b098ce25d3c5">estah_cheia</a>(f)) {</div>
+<div class="line">        cout &lt;&lt; <span class="stringliteral">&quot;Deu certo!&quot;</span> &lt;&lt; endl;</div>
+<div class="line">    }</div>
+<div class="line">    <a class="code" href="filadvet_8cpp.html#af3c6c26496134bd5a4d37a9e45968d98">liberar_fila</a>(f);</div>
+<div class="line">    <span class="keywordflow">return</span> EXIT_SUCCESS;</div>
+<div class="line">}  </div>
+</div><!-- fragment --><p>Saída esperada: </p><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;Deu certo!</div>
+</div><!-- fragment --><dl class="section pre"><dt>Pré-Condição</dt><dd>O ponteiro <code>*f</code> deve ser diferente de <code>NULL</code>.</dd></dl>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">*f</td><td>representa um ponteiro para a fila cuja situação será consultada.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd><code>true</code>, se a fila estiver cheia e <code>false</code>, caso contrário.</dd></dl>
+<dl class="section warning"><dt>Aviso</dt><dd>O programa será abortado, caso o ponteiro <code>*f</code> seja igual a <code>NULL</code>. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="aaccf062f5ae84e95537c1d7b961290a3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool estah_vazia </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_fila_d_vet.html">FilaDVet</a> *&#160;</td>
+          <td class="paramname"><em>f</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Verifica se a fila está vazia. </p>
+<p>Exemplo de uso: </p><div class="fragment"><div class="line"><span class="preprocessor">#include&lt;cstdlib&gt;</span></div>
+<div class="line"><span class="preprocessor">#include&lt;iostream&gt;</span></div>
+<div class="line"><span class="preprocessor">#include &quot;<a class="code" href="filadvet_8hpp.html">filadvet.hpp</a>&quot;</span></div>
+<div class="line"></div>
+<div class="line"><span class="keyword">using namespace </span><a class="code" href="namespacestd.html">std</a>;</div>
+<div class="line"></div>
+<div class="line"><span class="keywordtype">int</span> main() {</div>
+<div class="line">    <a class="code" href="struct_fila_d_vet.html">FilaDVet</a> *f = <a class="code" href="filadvet_8cpp.html#a427343f9327a5b2a5d3fac22c6bb256c">criar_fila_d</a>();</div>
+<div class="line">    <span class="keywordflow">if</span> (<a class="code" href="filadvet_8cpp.html#aaccf062f5ae84e95537c1d7b961290a3">estah_vazia</a>(f)) {</div>
+<div class="line">        cout &lt;&lt; <span class="stringliteral">&quot;Deu certo!&quot;</span> &lt;&lt; endl;</div>
+<div class="line">    }</div>
+<div class="line">    <a class="code" href="filadvet_8cpp.html#af3c6c26496134bd5a4d37a9e45968d98">liberar_fila</a>(f);</div>
+<div class="line">    <span class="keywordflow">return</span> EXIT_SUCCESS;</div>
+<div class="line">}  </div>
+</div><!-- fragment --><p>Saída esperada: </p><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;Deu certo!</div>
+</div><!-- fragment --><dl class="section pre"><dt>Pré-Condição</dt><dd>O ponteiro <code>*f</code> deve ser diferente de <code>NULL</code>.</dd></dl>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">*f</td><td>representa um ponteiro para a fila cuja situação será consultada.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd><code>true</code>, se a fila estiver vazia e <code>false</code>, caso contrário.</dd></dl>
+<dl class="section warning"><dt>Aviso</dt><dd>O programa será abortado, caso o ponteiro <code>*f</code> seja igual a <code>NULL</code>. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="aed14de21f590ffb7057f33dc283bd02e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void inserir_no_fim </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_fila_d_vet.html">FilaDVet</a> *&#160;</td>
+          <td class="paramname"><em>f</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>item</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Insere um novo elemento no final da fila. </p>
+<p>Exemplo de uso: </p><div class="fragment"><div class="line"><span class="preprocessor">#include&lt;cstdlib&gt;</span></div>
+<div class="line"><span class="preprocessor">#include&lt;iostream&gt;</span></div>
+<div class="line"><span class="preprocessor">#include &quot;<a class="code" href="filadvet_8hpp.html">filadvet.hpp</a>&quot;</span></div>
+<div class="line"></div>
+<div class="line"><span class="keyword">using namespace </span><a class="code" href="namespacestd.html">std</a>;</div>
+<div class="line"></div>
+<div class="line"><span class="keywordtype">int</span> main() {</div>
+<div class="line">    <a class="code" href="struct_fila_d_vet.html">FilaDVet</a> *f = <a class="code" href="filadvet_8cpp.html#a427343f9327a5b2a5d3fac22c6bb256c">criar_fila_d</a>();</div>
+<div class="line">    <a class="code" href="filadvet_8cpp.html#aed14de21f590ffb7057f33dc283bd02e">inserir_no_fim</a>(f, 2);</div>
+<div class="line">    <span class="keywordflow">if</span> (!<a class="code" href="filadvet_8cpp.html#aaccf062f5ae84e95537c1d7b961290a3">estah_vazia</a>(f)) {</div>
+<div class="line">        cout &lt;&lt; <span class="stringliteral">&quot;Deu certo!&quot;</span> &lt;&lt; endl;</div>
+<div class="line">    }</div>
+<div class="line">    <a class="code" href="filadvet_8cpp.html#af3c6c26496134bd5a4d37a9e45968d98">liberar_fila</a>(f);</div>
+<div class="line">    <span class="keywordflow">return</span> EXIT_SUCCESS;</div>
+<div class="line">}  </div>
+</div><!-- fragment --><p>Saída esperada: </p><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;Deu certo!</div>
+</div><!-- fragment --><dl class="section pre"><dt>Pré-Condição</dt><dd>O ponteiro <code>*f</code> deve ser diferente de <code>NULL</code>. </dd>
+<dd>
+A fila não deve estar cheia.</dd></dl>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">*f</td><td>representa um ponteiro para a fila onde o elemento será inserido. </td></tr>
+    <tr><td class="paramname">item</td><td>representa o item a ser inserido na fila.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>void</dd></dl>
+<dl class="section warning"><dt>Aviso</dt><dd>O programa será abortado, caso o ponteiro <code>*f</code> seja igual a <code>NULL</code>, ou caso a fila esteja cheia. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a6fc690c54c439b5c9cf1d575aa065a43"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void inserir_no_inicio </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_fila_d_vet.html">FilaDVet</a> *&#160;</td>
+          <td class="paramname"><em>f</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>item</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Insere um novo elemento no início da fila. Como se trata de uma fila dupla, essa operação é permitida. </p>
+<p>Exemplo de uso: </p><div class="fragment"><div class="line"><span class="preprocessor">#include&lt;cstdlib&gt;</span></div>
+<div class="line"><span class="preprocessor">#include&lt;iostream&gt;</span></div>
+<div class="line"><span class="preprocessor">#include &quot;<a class="code" href="filadvet_8hpp.html">filadvet.hpp</a>&quot;</span></div>
+<div class="line"></div>
+<div class="line"><span class="keyword">using namespace </span><a class="code" href="namespacestd.html">std</a>;</div>
+<div class="line"></div>
+<div class="line"><span class="keywordtype">int</span> main() {</div>
+<div class="line">    <a class="code" href="struct_fila_d_vet.html">FilaDVet</a> *f = <a class="code" href="filadvet_8cpp.html#a427343f9327a5b2a5d3fac22c6bb256c">criar_fila_d</a>();</div>
+<div class="line">    <a class="code" href="filadvet_8cpp.html#a6fc690c54c439b5c9cf1d575aa065a43">inserir_no_inicio</a>(f, 2);</div>
+<div class="line">    <a class="code" href="filadvet_8cpp.html#a6fc690c54c439b5c9cf1d575aa065a43">inserir_no_inicio</a>(f, 3);</div>
+<div class="line">    <span class="keywordflow">if</span> (!<a class="code" href="filadvet_8cpp.html#aaccf062f5ae84e95537c1d7b961290a3">estah_vazia</a>(f)) {</div>
+<div class="line">        cout &lt;&lt; <a class="code" href="filadvet_8cpp.html#adfd6272c89af0d689dd6c964b535d44b">remover_do_inicio</a>(f) &lt;&lt; endl;</div>
+<div class="line">    }</div>
+<div class="line">    <a class="code" href="filadvet_8cpp.html#af3c6c26496134bd5a4d37a9e45968d98">liberar_fila</a>(f);</div>
+<div class="line">    <span class="keywordflow">return</span> EXIT_SUCCESS;</div>
+<div class="line">}  </div>
+</div><!-- fragment --><p>Saída esperada: </p><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;3</div>
+</div><!-- fragment --><dl class="section pre"><dt>Pré-Condição</dt><dd>O ponteiro <code>*f</code> deve ser diferente de <code>NULL</code>. </dd>
+<dd>
+A fila não deve estar cheia.</dd></dl>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">*f</td><td>representa um ponteiro para a fila onde o elemento será inserido. </td></tr>
+    <tr><td class="paramname">item</td><td>representa o item a ser inserido na fila.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>void</dd></dl>
+<dl class="section warning"><dt>Aviso</dt><dd>O programa será abortado, caso o ponteiro <code>*f</code> seja igual a <code>NULL</code>, ou caso a fila esteja cheia. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="af3c6c26496134bd5a4d37a9e45968d98"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void liberar_fila </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_fila_d_vet.html">FilaDVet</a> *&#160;</td>
+          <td class="paramname"><em>f</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Libera o espaço de memória anteriormente reservado para a fila. </p>
+<p>Exemplo de uso: </p><div class="fragment"><div class="line"><span class="preprocessor">#include&lt;cstdlib&gt;</span></div>
+<div class="line"><span class="preprocessor">#include &quot;<a class="code" href="filadvet_8hpp.html">filadvet.hpp</a>&quot;</span></div>
+<div class="line"></div>
+<div class="line"><span class="keywordtype">int</span> main() {</div>
+<div class="line">    <a class="code" href="struct_fila_d_vet.html">FilaDVet</a> *f = <a class="code" href="filadvet_8cpp.html#a427343f9327a5b2a5d3fac22c6bb256c">criar_fila_d</a>();</div>
+<div class="line">    <a class="code" href="filadvet_8cpp.html#af3c6c26496134bd5a4d37a9e45968d98">liberar_fila</a>(f);</div>
+<div class="line">    <span class="keywordflow">return</span> EXIT_SUCCESS;</div>
+<div class="line">}  </div>
+</div><!-- fragment --><dl class="section pre"><dt>Pré-Condição</dt><dd>O ponteiro <code>*f</code> deve ser diferente de <code>NULL</code>.</dd></dl>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">*f</td><td>representa um ponteiro para a fila a ser liberada da memória.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>void</dd></dl>
+<dl class="section warning"><dt>Aviso</dt><dd>O programa será abortado, caso o ponteiro <code>*f</code> seja igual a <code>NULL</code>. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ae326d1b7251d360ea4e3f44542321f43"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int obter_fim </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_fila_d_vet.html">FilaDVet</a> *&#160;</td>
+          <td class="paramname"><em>f</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Apenas retorna o elemento do fim da fila. Como se trata de uma fila dupla, essa operação é permitida. </p>
+<p>Exemplo de uso: </p><div class="fragment"><div class="line"><span class="preprocessor">#include&lt;cstdlib&gt;</span></div>
+<div class="line"><span class="preprocessor">#include&lt;iostream&gt;</span></div>
+<div class="line"><span class="preprocessor">#include &quot;<a class="code" href="filadvet_8hpp.html">filadvet.hpp</a>&quot;</span></div>
+<div class="line"></div>
+<div class="line"><span class="keyword">using namespace </span><a class="code" href="namespacestd.html">std</a>;</div>
+<div class="line"></div>
+<div class="line"><span class="keywordtype">int</span> main() {</div>
+<div class="line">    <a class="code" href="struct_fila_d_vet.html">FilaDVet</a> *f = <a class="code" href="filadvet_8cpp.html#a427343f9327a5b2a5d3fac22c6bb256c">criar_fila_d</a>();</div>
+<div class="line">    <a class="code" href="filadvet_8cpp.html#aed14de21f590ffb7057f33dc283bd02e">inserir_no_fim</a>(f, 1);</div>
+<div class="line">    <a class="code" href="filadvet_8cpp.html#aed14de21f590ffb7057f33dc283bd02e">inserir_no_fim</a>(f, 2);</div>
+<div class="line">    <a class="code" href="filadvet_8cpp.html#aed14de21f590ffb7057f33dc283bd02e">inserir_no_fim</a>(f, 3);</div>
+<div class="line">    <span class="keywordflow">while</span> (!<a class="code" href="filadvet_8cpp.html#aaccf062f5ae84e95537c1d7b961290a3">estah_vazia</a>(f)) {</div>
+<div class="line">        cout &lt;&lt; <a class="code" href="filadvet_8cpp.html#ae326d1b7251d360ea4e3f44542321f43">obter_fim</a>(f) &lt;&lt; endl;</div>
+<div class="line">        <a class="code" href="filadvet_8cpp.html#a93080657b870a1a5574a8fb50faf1a85">remover_do_fim</a>(f);</div>
+<div class="line">    }</div>
+<div class="line">    <a class="code" href="filadvet_8cpp.html#af3c6c26496134bd5a4d37a9e45968d98">liberar_fila</a>(f);</div>
+<div class="line">    <span class="keywordflow">return</span> EXIT_SUCCESS;</div>
+<div class="line">}  </div>
+</div><!-- fragment --><p>Saída esperada: </p><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;3</div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;2</div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;1</div>
+</div><!-- fragment --><dl class="section pre"><dt>Pré-Condição</dt><dd>O ponteiro <code>*f</code> deve ser diferente de <code>NULL</code>. </dd>
+<dd>
+A fila não deve estar vazia.</dd></dl>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">*f</td><td>representa um ponteiro para a fila de onde o elemento será obtido.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>O elemento do fim da fila.</dd></dl>
+<dl class="section warning"><dt>Aviso</dt><dd>O programa será abortado, caso o ponteiro <code>*f</code> seja igual a <code>NULL</code>. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a777986e815ca5f2975fcf670e5e33278"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int obter_inicio </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_fila_d_vet.html">FilaDVet</a> *&#160;</td>
+          <td class="paramname"><em>f</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Apenas retorna o elemento do início da fila. </p>
+<p>Exemplo de uso: </p><div class="fragment"><div class="line"><span class="preprocessor">#include&lt;cstdlib&gt;</span></div>
+<div class="line"><span class="preprocessor">#include&lt;iostream&gt;</span></div>
+<div class="line"><span class="preprocessor">#include &quot;<a class="code" href="filadvet_8hpp.html">filadvet.hpp</a>&quot;</span></div>
+<div class="line"></div>
+<div class="line"><span class="keyword">using namespace </span><a class="code" href="namespacestd.html">std</a>;</div>
+<div class="line"></div>
+<div class="line"><span class="keywordtype">int</span> main() {</div>
+<div class="line">    <a class="code" href="struct_fila_d_vet.html">FilaDVet</a> *f = <a class="code" href="filadvet_8cpp.html#a427343f9327a5b2a5d3fac22c6bb256c">criar_fila_d</a>();</div>
+<div class="line">    <a class="code" href="filadvet_8cpp.html#aed14de21f590ffb7057f33dc283bd02e">inserir_no_fim</a>(f, 1);</div>
+<div class="line">    <a class="code" href="filadvet_8cpp.html#aed14de21f590ffb7057f33dc283bd02e">inserir_no_fim</a>(f, 2);</div>
+<div class="line">    <a class="code" href="filadvet_8cpp.html#aed14de21f590ffb7057f33dc283bd02e">inserir_no_fim</a>(f, 3);</div>
+<div class="line">    <span class="keywordflow">while</span> (!<a class="code" href="filadvet_8cpp.html#aaccf062f5ae84e95537c1d7b961290a3">estah_vazia</a>(f)) {</div>
+<div class="line">        cout &lt;&lt; <a class="code" href="filadvet_8cpp.html#a777986e815ca5f2975fcf670e5e33278">obter_inicio</a>(f) &lt;&lt; endl;</div>
+<div class="line">        <a class="code" href="filadvet_8cpp.html#adfd6272c89af0d689dd6c964b535d44b">remover_do_inicio</a>(f);</div>
+<div class="line">    }</div>
+<div class="line">    <a class="code" href="filadvet_8cpp.html#af3c6c26496134bd5a4d37a9e45968d98">liberar_fila</a>(f);</div>
+<div class="line">    <span class="keywordflow">return</span> EXIT_SUCCESS;</div>
+<div class="line">}  </div>
+</div><!-- fragment --><p>Saída esperada: </p><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;1</div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;2</div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;3</div>
+</div><!-- fragment --><dl class="section pre"><dt>Pré-Condição</dt><dd>O ponteiro <code>*f</code> deve ser diferente de <code>NULL</code>. </dd>
+<dd>
+A fila não deve estar vazia.</dd></dl>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">*f</td><td>representa um ponteiro para a fila de onde o elemento será obtido.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>O elemento do início da fila.</dd></dl>
+<dl class="section warning"><dt>Aviso</dt><dd>O programa será abortado, caso o ponteiro <code>*f</code> seja igual a <code>NULL</code>. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a93080657b870a1a5574a8fb50faf1a85"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int remover_do_fim </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_fila_d_vet.html">FilaDVet</a> *&#160;</td>
+          <td class="paramname"><em>f</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Remove e retorna o elemento do fim da fila. Como se trata de uma fila dupla, essa operação é permitida. </p>
+<p>Exemplo de uso: </p><div class="fragment"><div class="line"><span class="preprocessor">#include&lt;cstdlib&gt;</span></div>
+<div class="line"><span class="preprocessor">#include&lt;iostream&gt;</span></div>
+<div class="line"><span class="preprocessor">#include &quot;<a class="code" href="filadvet_8hpp.html">filadvet.hpp</a>&quot;</span></div>
+<div class="line"></div>
+<div class="line"><span class="keyword">using namespace </span><a class="code" href="namespacestd.html">std</a>;</div>
+<div class="line"></div>
+<div class="line"><span class="keywordtype">int</span> main() {</div>
+<div class="line">    <a class="code" href="struct_fila_d_vet.html">FilaDVet</a> *f = <a class="code" href="filadvet_8cpp.html#a427343f9327a5b2a5d3fac22c6bb256c">criar_fila_d</a>();</div>
+<div class="line">    <a class="code" href="filadvet_8cpp.html#aed14de21f590ffb7057f33dc283bd02e">inserir_no_fim</a>(f, 1);</div>
+<div class="line">    <a class="code" href="filadvet_8cpp.html#aed14de21f590ffb7057f33dc283bd02e">inserir_no_fim</a>(f, 2);</div>
+<div class="line">    <a class="code" href="filadvet_8cpp.html#aed14de21f590ffb7057f33dc283bd02e">inserir_no_fim</a>(f, 3);</div>
+<div class="line">    <span class="keywordflow">while</span> (!<a class="code" href="filadvet_8cpp.html#aaccf062f5ae84e95537c1d7b961290a3">estah_vazia</a>(f)) {</div>
+<div class="line">        cout &lt;&lt; <a class="code" href="filadvet_8cpp.html#a93080657b870a1a5574a8fb50faf1a85">remover_do_fim</a>(f) &lt;&lt; endl;</div>
+<div class="line">    }</div>
+<div class="line">    <a class="code" href="filadvet_8cpp.html#af3c6c26496134bd5a4d37a9e45968d98">liberar_fila</a>(f);</div>
+<div class="line">    <span class="keywordflow">return</span> EXIT_SUCCESS;</div>
+<div class="line">}  </div>
+</div><!-- fragment --><p>Saída esperada: </p><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;3</div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;2</div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;1</div>
+</div><!-- fragment --><dl class="section pre"><dt>Pré-Condição</dt><dd>O ponteiro <code>*f</code> deve ser diferente de <code>NULL</code>. </dd>
+<dd>
+A fila não deve estar vazia.</dd></dl>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">*f</td><td>representa um ponteiro para a fila de onde o elemento será removido.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>O elemento removido do fim da fila.</dd></dl>
+<dl class="section warning"><dt>Aviso</dt><dd>O programa será abortado, caso o ponteiro <code>*f</code> seja igual a <code>NULL</code>, ou caso a fila esteja vazia. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="adfd6272c89af0d689dd6c964b535d44b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int remover_do_inicio </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_fila_d_vet.html">FilaDVet</a> *&#160;</td>
+          <td class="paramname"><em>f</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Remove e retorna o elemento do início da fila. </p>
+<p>Exemplo de uso: </p><div class="fragment"><div class="line"><span class="preprocessor">#include&lt;cstdlib&gt;</span></div>
+<div class="line"><span class="preprocessor">#include&lt;iostream&gt;</span></div>
+<div class="line"><span class="preprocessor">#include &quot;<a class="code" href="filadvet_8hpp.html">filadvet.hpp</a>&quot;</span></div>
+<div class="line"></div>
+<div class="line"><span class="keyword">using namespace </span><a class="code" href="namespacestd.html">std</a>;</div>
+<div class="line"></div>
+<div class="line"><span class="keywordtype">int</span> main() {</div>
+<div class="line">    <a class="code" href="struct_fila_d_vet.html">FilaDVet</a> *f = <a class="code" href="filadvet_8cpp.html#a427343f9327a5b2a5d3fac22c6bb256c">criar_fila_d</a>();</div>
+<div class="line">    <a class="code" href="filadvet_8cpp.html#aed14de21f590ffb7057f33dc283bd02e">inserir_no_fim</a>(f, 1);</div>
+<div class="line">    <a class="code" href="filadvet_8cpp.html#aed14de21f590ffb7057f33dc283bd02e">inserir_no_fim</a>(f, 2);</div>
+<div class="line">    <a class="code" href="filadvet_8cpp.html#aed14de21f590ffb7057f33dc283bd02e">inserir_no_fim</a>(f, 3);</div>
+<div class="line">    <span class="keywordflow">while</span> (!<a class="code" href="filadvet_8cpp.html#aaccf062f5ae84e95537c1d7b961290a3">estah_vazia</a>(f)) {</div>
+<div class="line">        cout &lt;&lt; <a class="code" href="filadvet_8cpp.html#adfd6272c89af0d689dd6c964b535d44b">remover_do_inicio</a>(f) &lt;&lt; endl;</div>
+<div class="line">    }</div>
+<div class="line">    <a class="code" href="filadvet_8cpp.html#af3c6c26496134bd5a4d37a9e45968d98">liberar_fila</a>(f);</div>
+<div class="line">    <span class="keywordflow">return</span> EXIT_SUCCESS;</div>
+<div class="line">}  </div>
+</div><!-- fragment --><p>Saída esperada: </p><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;1</div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;2</div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;3</div>
+</div><!-- fragment --><dl class="section pre"><dt>Pré-Condição</dt><dd>O ponteiro <code>*f</code> deve ser diferente de <code>NULL</code>. </dd>
+<dd>
+A fila não deve estar vazia.</dd></dl>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">*f</td><td>representa um ponteiro para a fila de onde o elemento será removido.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>O elemento removido do início da fila.</dd></dl>
+<dl class="section warning"><dt>Aviso</dt><dd>O programa será abortado, caso o ponteiro <code>*f</code> seja igual a <code>NULL</code>, ou caso a fila esteja vazia. </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.8
+</small></address>
+</body>
+</html>

@@ -1,6 +1,6 @@
 # O trecho abaixo permite que arquivos sem extensão sejam ignorados
-*
-!*.*
+# *
+# !*.*
 
 # Main file
 Main.cpp
