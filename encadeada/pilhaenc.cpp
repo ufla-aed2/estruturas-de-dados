@@ -2,8 +2,6 @@
 #include <cstdlib> /**< Necessário para uso do NULL. */
 #include "pilhaenc.hpp"
 
-using namespace std;
-
 struct Noh {
 	int item; /**< Representa a informação a ser armazenada em cada nó da pilha. */
 	Noh* prox; /**< É um ponteiro para o próximo nó da pilha. */

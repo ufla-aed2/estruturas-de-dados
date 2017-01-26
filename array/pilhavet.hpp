@@ -15,7 +15,7 @@
  * \brief Define a quantidade máxima de elementos suportada pela pilha.
  * \hideinitializer
  */
-#define TAM_MAX 100 
+#define TAM_MAX 1000000 
 
 /** 
  * \struct PilhaVet
