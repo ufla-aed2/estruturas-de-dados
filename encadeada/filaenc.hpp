@@ -1,30 +1,32 @@
 /**
- * \file filavet.hpp
+ * \file filaenc.hpp
  * \author Prof. Paulo Afonso (pauloa.junior@dcc.ufla.br)
- * \date Outubro, 2016
- * \brief Interface do TAD FilaVet
+ * \date Janeiro, 2017
+ * \brief Interface do TAD FilaEnc
  * 
  * Disponibiliza as funções necessárias para manipulação da estrutura de dados Fila.
  */
  
-#ifndef FILAVET_HPP
-#define FILAVET_HPP
-
-/**
- * \def TAM_MAX 
- * \brief Define a quantidade máxima de elementos suportada pela fila.
- * \hideinitializer
- */
-#define TAM_MAX 100 
+#ifndef FILAENC_HPP
+#define FILAENC_HPP
 
 /** 
- * \struct FilaVet
+ * \struct FilaEnc
  * \brief Declaração opaca da estrutura de uma fila.
  * 
  * Isso significa que os detalhes de implementação desta estrutura estão escondidos do usuário do TAD. 
- * A definição da estrutura FilaVet encontra-se no arquivo \file filavet.cpp.
+ * A definição da estrutura FilaEnc encontra-se no arquivo \file FilaEnc.cpp.
  */
-struct FilaVet;
+struct FilaEnc;
+
+/** 
+ * \struct Noh
+ * \brief Declaração opaca da estrutura de um nó da fila.
+ * 
+ * Isso significa que os detalhes de implementação desta estrutura estão escondidos do usuário do TAD. 
+ * A definição da estrutura Noh encontra-se no arquivo \file filaenc.cpp.
+ */
+struct Noh;
 
 /** 
  * \brief Cria dinamicamente uma fila vazia e retorna o endereço onde ela se encontra alocada.
@@ -32,17 +34,17 @@ struct FilaVet;
  * Exemplo de uso:
  * \code {.cpp}
  * #include<cstdlib>
- * #include "filavet.hpp"
+ * #include "filaenc.hpp"
 
  * int main() {
- *     FilaVet *f = criar_fila();
+ *     FilaEnc *f = criar_fila();
  *     return EXIT_SUCCESS;
  * }  
  * \endcode
  * 
  * \return O endereço de memória da fila alocada dinamicamente.
  */
-FilaVet* criar_fila();
+FilaEnc* criar_fila();
 
 /** 
  * \brief Libera o espaço de memória anteriormente reservado para a fila.
@@ -50,10 +52,10 @@ FilaVet* criar_fila();
  * Exemplo de uso:
  * \code {.cpp}
  * #include<cstdlib>
- * #include "filavet.hpp"
+ * #include "filaenc.hpp"
  * 
  * int main() {
- *     FilaVet *f = criar_fila();
+ *     FilaEnc *f = criar_fila();
  *     liberar_fila(f);
  *     return EXIT_SUCCESS;
  * }  
@@ -67,7 +69,7 @@ FilaVet* criar_fila();
  * 
  * \warning O programa será abortado, caso o ponteiro \p *f seja igual a \p NULL.
  */
-void liberar_fila(FilaVet* f);
+void liberar_fila(FilaEnc* f);
 
 /** 
  * \brief Verifica se a fila está vazia. 
@@ -76,12 +78,12 @@ void liberar_fila(FilaVet* f);
  * \code {.cpp}
  * #include<cstdlib>
  * #include<iostream>
- * #include "filavet.hpp"
+ * #include "filaenc.hpp"
  * 
  * using namespace std;
  *
  * int main() {
- *     FilaVet *f = criar_fila();
+ *     FilaEnc *f = criar_fila();
  *     if (estah_vazia(f)) {
  *         cout << "Deu certo!" << endl;
  *     }
@@ -103,43 +105,7 @@ void liberar_fila(FilaVet* f);
  * 
  * \warning O programa será abortado, caso o ponteiro \p *f seja igual a \p NULL.
 */
-bool estah_vazia(FilaVet* f);
-
-/** 
- * \brief Verifica se a fila está cheia. 
- * 
- * Exemplo de uso:
- * \code {.cpp}
- * #include<cstdlib>
- * #include<iostream>
- * #include "filavet.hpp"
- * 
- * using namespace std;
- *
- * int main() {
- *     FilaVet *f = criar_fila();
- *     if (!estah_cheia(f)) {
- *         cout << "Deu certo!" << endl;
- *     }
- *     liberar_fila(f);
- *     return EXIT_SUCCESS;
- * }  
- * \endcode
- * 
- * Saída esperada: 
- * \code {.unparsed}
- *     Deu certo!
- * \endcode 
- * 
- * \pre O ponteiro \p *f deve ser diferente de \p NULL.
- * 
- * \param *f representa um ponteiro para a fila cuja situação será consultada.
- * 
- * \return \p true, se a fila estiver cheia e \p false, caso contrário.
- * 
- * \warning O programa será abortado, caso o ponteiro \p *f seja igual a \p NULL.
-*/
-bool estah_cheia(FilaVet* f);
+bool estah_vazia(FilaEnc* f);
 
 /** 
  * \brief Insere um novo elemento no final da fila.  
@@ -148,12 +114,12 @@ bool estah_cheia(FilaVet* f);
  * \code {.cpp}
  * #include<cstdlib>
  * #include<iostream>
- * #include "filavet.hpp"
+ * #include "filaenc.hpp"
  * 
  * using namespace std;
  *
  * int main() {
- *     FilaVet *f = criar_fila();
+ *     FilaEnc *f = criar_fila();
  *     inserir(f, 2);
  *     if (!estah_vazia(f)) {
  *         cout << "Deu certo!" << endl;
@@ -176,10 +142,9 @@ bool estah_cheia(FilaVet* f);
  * 
  * \return void
  * 
- * \warning O programa será abortado, caso o ponteiro \p *f seja igual a \p NULL, ou
- * 			caso a fila esteja cheia.
+ * \warning O programa será abortado, caso o ponteiro \p *f seja igual a \p NULL.
  */
-void inserir(FilaVet* f, int item);
+void inserir(FilaEnc* f, int item);
 
 /** 
  * \brief Remove e retorna o elemento do início da fila. 
@@ -188,12 +153,12 @@ void inserir(FilaVet* f, int item);
  * \code {.cpp}
  * #include<cstdlib>
  * #include<iostream>
- * #include "filavet.hpp"
+ * #include "filaenc.hpp"
  * 
  * using namespace std;
  *
  * int main() {
- *     FilaVet *f = criar_fila();
+ *     FilaEnc *f = criar_fila();
  *     inserir(f, 1);
  *     inserir(f, 2);
  *     inserir(f, 3);
@@ -220,10 +185,10 @@ void inserir(FilaVet* f, int item);
  * 
  * \return O elemento removido do início da fila.
  * 
- * \warning O programa será abortado, caso o ponteiro \p *f seja igual a \p NULL, ou
+ * \warning O programa será abortado, caso o ponteiro \p *f seja igual a \p NULL ou
  * 			caso a fila esteja vazia.
  */
-int remover(FilaVet* f);
+int remover(FilaEnc* f);
 
 /** 
  * \brief Apenas retorna o elemento do início da fila. 
@@ -232,12 +197,12 @@ int remover(FilaVet* f);
  * \code {.cpp}
  * #include<cstdlib>
  * #include<iostream>
- * #include "filavet.hpp"
+ * #include "filaenc.hpp"
  * 
  * using namespace std;
  *
  * int main() {
- *     FilaVet *f = criar_fila();
+ *     FilaEnc *f = criar_fila();
  *     inserir(f, 1);
  *     inserir(f, 2);
  *     inserir(f, 3);
@@ -265,9 +230,9 @@ int remover(FilaVet* f);
  * 
  * \return O elemento do início da fila.
  *
- * \warning O programa será abortado, caso o ponteiro \p *f seja igual a \p NULL ou 
- * 	    caso a fila esteja vazia
+ * \warning O programa será abortado, caso o ponteiro \p *f seja igual a \p NULL ou
+ * 			caso a fila esteja vazia.
  */
-int obter_inicio(FilaVet* f);
+int obter_inicio(FilaEnc* f);
 
 #endif

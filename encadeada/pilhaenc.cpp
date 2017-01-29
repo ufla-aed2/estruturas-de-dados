@@ -43,17 +43,13 @@ bool estah_vazia(PilhaEnc* pilha) {
 	return (pilha->topo == NULL);
 }
 
-Noh* criar_noh(int item, Noh* prox) {
-	Noh* novoNoh = new Noh;
-	novoNoh->item = item;
-	novoNoh->prox = prox;
-	return novoNoh;
-}
-
 void empilhar(PilhaEnc* pilha, int item) {
     assert(pilha != NULL);
 	
-	Noh* novo_noh = criar_noh(item, pilha->topo); 
+	Noh* novo_noh = new Noh;
+	novo_noh->item = item;
+	novo_noh->prox = pilha->topo;
+	 
 	pilha->topo = novo_noh;
 }
 

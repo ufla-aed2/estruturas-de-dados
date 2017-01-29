@@ -265,7 +265,8 @@ int desempilhar(PilhaVet* p);
  * 
  * \return O elemento do topo da pilha.
  *
- * \warning O programa será abortado, caso o ponteiro \p *p seja igual a \p NULL.
+ * \warning O programa será abortado, caso o ponteiro \p *p seja igual a \p NULL ou 
+ * 	    caso a pilha esteja vazia
  */
 int obter_topo(PilhaVet* p);
 

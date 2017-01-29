@@ -142,8 +142,7 @@ bool estah_vazia(PilhaEnc* p);
  * 
  * \return void
  * 
- * \warning O programa será abortado, caso o ponteiro \p *p seja igual a \p NULL, ou
- * 			caso a pilha esteja cheia.
+ * \warning O programa será abortado, caso o ponteiro \p *p seja igual a \p NULL.
  */
 void empilhar(PilhaEnc* p, int item);
 
@@ -231,7 +230,8 @@ int desempilhar(PilhaEnc* p);
  * 
  * \return O elemento do topo da pilha.
  *
- * \warning O programa será abortado, caso o ponteiro \p *p seja igual a \p NULL.
+ * \warning O programa será abortado, caso o ponteiro \p *p seja igual a \p NULL ou
+ * 	    caso a pilha esteja vazia.
  */
 int obter_topo(PilhaEnc* p);
 

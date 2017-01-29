@@ -219,7 +219,7 @@ void inserir_no_fim(FilaDVet* f, int item);
  * 
  * \return O elemento removido do início da fila.
  * 
- * \warning O programa será abortado, caso o ponteiro \p *f seja igual a \p NULL, ou
+ * \warning O programa será abortado, caso o ponteiro \p *f seja igual a \p NULL ou
  * 			caso a fila esteja vazia.
  */
 int remover_do_inicio(FilaDVet* f);
@@ -263,7 +263,8 @@ int remover_do_inicio(FilaDVet* f);
  * 
  * \return O elemento do início da fila.
  *
- * \warning O programa será abortado, caso o ponteiro \p *f seja igual a \p NULL.
+ * \warning O programa será abortado, caso o ponteiro \p *f seja igual a \p NULL ou 
+ * 	    caso a fila esteja vazia
  */
 int obter_inicio(FilaDVet* f);
 
@@ -390,7 +391,8 @@ int remover_do_fim(FilaDVet* f);
  * 
  * \return O elemento do fim da fila.
  *
- * \warning O programa será abortado, caso o ponteiro \p *f seja igual a \p NULL.
+ * \warning O programa será abortado, caso o ponteiro \p *f seja igual a \p NULL ou 
+ * 	    caso a fila esteja vazia.
  */
 int obter_fim(FilaDVet* f);
 
