@@ -135,7 +135,6 @@ bool estah_vazia(FilaEnc* f);
  * \endcode
  * 
  * \pre O ponteiro \p *f deve ser diferente de \p NULL.
- * \pre A fila não deve estar cheia.
  *  
  * \param *f representa um ponteiro para a fila onde o elemento será inserido.
  * \param item representa o item a ser inserido na fila.

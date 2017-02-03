@@ -3,8 +3,8 @@
 #include "filaenc.hpp"
 
 struct Noh {
-	int item; /**< Representa a informação a ser armazenada em cada nó da pilha. */
-	Noh* prox; /**< É um ponteiro para o próximo nó da pilha. */
+	int item; /**< Representa a informação a ser armazenada em cada nó da fila. */
+	Noh* prox; /**< É um ponteiro para o próximo nó da fila. */
 };
 
 struct FilaEnc {

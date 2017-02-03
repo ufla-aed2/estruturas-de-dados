@@ -59,7 +59,7 @@
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Estruturas de Dados</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_noh.html">Noh</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Declaração opaca da estrutura de um nó da pilha.  <a href="struct_noh.html#details">Mais...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Declaração opaca da estrutura de um nó da fila.  <a href="struct_noh.html#details">Mais...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_pilha_enc.html">PilhaEnc</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Declaração opaca da estrutura de uma pilha.  <a href="struct_pilha_enc.html#details">Mais...</a><br /></td></tr>
@@ -76,9 +76,6 @@ Funções</h2></td></tr>
 <tr class="memitem:a7ab1dcbec42ae151a3d8c6ee1c7a6a52"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pilhaenc_8cpp.html#a7ab1dcbec42ae151a3d8c6ee1c7a6a52">estah_vazia</a> (<a class="el" href="struct_pilha_enc.html">PilhaEnc</a> *pilha)</td></tr>
 <tr class="memdesc:a7ab1dcbec42ae151a3d8c6ee1c7a6a52"><td class="mdescLeft">&#160;</td><td class="mdescRight">Verifica se a pilha está vazia.  <a href="#a7ab1dcbec42ae151a3d8c6ee1c7a6a52">Mais...</a><br /></td></tr>
 <tr class="separator:a7ab1dcbec42ae151a3d8c6ee1c7a6a52"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a05b0a61e8adeccca2ccec1ce5b62b4c5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a05b0a61e8adeccca2ccec1ce5b62b4c5"></a>
-<a class="el" href="struct_noh.html">Noh</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>criar_noh</b> (int item, <a class="el" href="struct_noh.html">Noh</a> *prox)</td></tr>
-<tr class="separator:a05b0a61e8adeccca2ccec1ce5b62b4c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a57809dcc8c1e01cd97c0f179c8a82929"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pilhaenc_8cpp.html#a57809dcc8c1e01cd97c0f179c8a82929">empilhar</a> (<a class="el" href="struct_pilha_enc.html">PilhaEnc</a> *pilha, int item)</td></tr>
 <tr class="memdesc:a57809dcc8c1e01cd97c0f179c8a82929"><td class="mdescLeft">&#160;</td><td class="mdescRight">Insere um novo elemento na pilha.  <a href="#a57809dcc8c1e01cd97c0f179c8a82929">Mais...</a><br /></td></tr>
 <tr class="separator:a57809dcc8c1e01cd97c0f179c8a82929"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -218,7 +215,7 @@ A pilha não deve estar cheia.</dd></dl>
   </dd>
 </dl>
 <dl class="section return"><dt>Retorna</dt><dd>void</dd></dl>
-<dl class="section warning"><dt>Aviso</dt><dd>O programa será abortado, caso o ponteiro <code>*p</code> seja igual a <code>NULL</code>, ou caso a pilha esteja cheia. </dd></dl>
+<dl class="section warning"><dt>Aviso</dt><dd>O programa será abortado, caso o ponteiro <code>*p</code> seja igual a <code>NULL</code>. </dd></dl>
 
 </div>
 </div>
@@ -346,7 +343,7 @@ A pilha não deve estar vazia.</dd></dl>
   </dd>
 </dl>
 <dl class="section return"><dt>Retorna</dt><dd>O elemento do topo da pilha.</dd></dl>
-<dl class="section warning"><dt>Aviso</dt><dd>O programa será abortado, caso o ponteiro <code>*p</code> seja igual a <code>NULL</code>. </dd></dl>
+<dl class="section warning"><dt>Aviso</dt><dd>O programa será abortado, caso o ponteiro <code>*p</code> seja igual a <code>NULL</code> ou caso a pilha esteja vazia. </dd></dl>
 
 </div>
 </div>

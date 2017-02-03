@@ -135,7 +135,6 @@ bool estah_vazia(PilhaEnc* p);
  * \endcode
  * 
  * \pre O ponteiro \p *p deve ser diferente de \p NULL.
- * \pre A pilha não deve estar cheia.
  *  
  * \param *p representa um ponteiro para a pilha onde o elemento será inserido.
  * \param item representa o item a ser inserido na pilha.
