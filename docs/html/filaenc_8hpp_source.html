@@ -1,0 +1,90 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.8"/>
+<title>Estruturas de Dados: Código-Fonte de eds/encadeada/filaenc.hpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Estruturas de Dados
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.8.8 -->
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Página&#160;Principal</span></a></li>
+      <li><a href="annotated.html"><span>Estruturas&#160;de&#160;Dados</span></a></li>
+      <li class="current"><a href="files.html"><span>Arquivos</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&#160;de&#160;Arquivos</span></a></li>
+      <li><a href="globals.html"><span>Globais</span></a></li>
+    </ul>
+  </div>
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_a3f2bd107d1269366d90e558a516eb2f.html">eds</a></li><li class="navelem"><a class="el" href="dir_48d38a9ac268f4d9f93bc0b064bb1e62.html">encadeada</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">filaenc.hpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="filaenc_8hpp.html">Vá para a documentação deste arquivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#ifndef FILAENC_HPP</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#define FILAENC_HPP</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">struct </span><a class="code" href="struct_fila_enc.html">FilaEnc</a>;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="keyword">struct </span><a class="code" href="struct_noh.html">Noh</a>;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<a class="code" href="struct_fila_enc.html">FilaEnc</a>* <a class="code" href="filaenc_8hpp.html#ae4a780776dfe10429135181c3ae51d0c">criar_fila</a>();</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="keywordtype">void</span> <a class="code" href="filaenc_8hpp.html#acefe8b13aaca42aa5ce7e1bd24803ae3">liberar_fila</a>(<a class="code" href="struct_fila_enc.html">FilaEnc</a>* f);</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="filaenc_8hpp.html#af789d6fe6b22ab7f38e66c01248baed7">estah_vazia</a>(<a class="code" href="struct_fila_enc.html">FilaEnc</a>* f);</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;<span class="keywordtype">void</span> <a class="code" href="filaenc_8hpp.html#ac864866ceecb56b7ea8c35b7b881175b">inserir</a>(<a class="code" href="struct_fila_enc.html">FilaEnc</a>* f, <span class="keywordtype">int</span> <a class="code" href="struct_noh.html#a02e491a383d28941868b142ff9f9e886">item</a>);</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;<span class="keywordtype">int</span> <a class="code" href="filaenc_8hpp.html#a6f2ebc3b4d4a187e50770127cc82291d">remover</a>(<a class="code" href="struct_fila_enc.html">FilaEnc</a>* f);</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;<span class="keywordtype">int</span> <a class="code" href="filaenc_8hpp.html#a298d721e5d487024d65c725dbc06a783">obter_inicio</a>(<a class="code" href="struct_fila_enc.html">FilaEnc</a>* f);</div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;</div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="struct_noh_html"><div class="ttname"><a href="struct_noh.html">Noh</a></div><div class="ttdoc">Declaração opaca da estrutura de um nó da fila. </div><div class="ttdef"><b>Definition:</b> filaenc.cpp:5</div></div>
+<div class="ttc" id="filaenc_8hpp_html_af789d6fe6b22ab7f38e66c01248baed7"><div class="ttname"><a href="filaenc_8hpp.html#af789d6fe6b22ab7f38e66c01248baed7">estah_vazia</a></div><div class="ttdeci">bool estah_vazia(FilaEnc *f)</div><div class="ttdoc">Verifica se a fila está vazia. </div><div class="ttdef"><b>Definition:</b> filaenc.cpp:42</div></div>
+<div class="ttc" id="filaenc_8hpp_html_a298d721e5d487024d65c725dbc06a783"><div class="ttname"><a href="filaenc_8hpp.html#a298d721e5d487024d65c725dbc06a783">obter_inicio</a></div><div class="ttdeci">int obter_inicio(FilaEnc *f)</div><div class="ttdoc">Apenas retorna o elemento do início da fila. </div><div class="ttdef"><b>Definition:</b> filaenc.cpp:77</div></div>
+<div class="ttc" id="struct_fila_enc_html"><div class="ttname"><a href="struct_fila_enc.html">FilaEnc</a></div><div class="ttdoc">Declaração opaca da estrutura de uma fila. </div><div class="ttdef"><b>Definition:</b> filaenc.cpp:10</div></div>
+<div class="ttc" id="filaenc_8hpp_html_ae4a780776dfe10429135181c3ae51d0c"><div class="ttname"><a href="filaenc_8hpp.html#ae4a780776dfe10429135181c3ae51d0c">criar_fila</a></div><div class="ttdeci">FilaEnc * criar_fila()</div><div class="ttdoc">Cria dinamicamente uma fila vazia e retorna o endereço onde ela se encontra alocada. </div><div class="ttdef"><b>Definition:</b> filavet.cpp:23</div></div>
+<div class="ttc" id="filaenc_8hpp_html_acefe8b13aaca42aa5ce7e1bd24803ae3"><div class="ttname"><a href="filaenc_8hpp.html#acefe8b13aaca42aa5ce7e1bd24803ae3">liberar_fila</a></div><div class="ttdeci">void liberar_fila(FilaEnc *f)</div><div class="ttdoc">Libera o espaço de memória anteriormente reservado para a fila. </div><div class="ttdef"><b>Definition:</b> filaenc.cpp:27</div></div>
+<div class="ttc" id="filaenc_8hpp_html_a6f2ebc3b4d4a187e50770127cc82291d"><div class="ttname"><a href="filaenc_8hpp.html#a6f2ebc3b4d4a187e50770127cc82291d">remover</a></div><div class="ttdeci">int remover(FilaEnc *f)</div><div class="ttdoc">Remove e retorna o elemento do início da fila. </div><div class="ttdef"><b>Definition:</b> filaenc.cpp:63</div></div>
+<div class="ttc" id="struct_noh_html_a02e491a383d28941868b142ff9f9e886"><div class="ttname"><a href="struct_noh.html#a02e491a383d28941868b142ff9f9e886">Noh::item</a></div><div class="ttdeci">int item</div><div class="ttdef"><b>Definition:</b> filaenc.cpp:6</div></div>
+<div class="ttc" id="filaenc_8hpp_html_ac864866ceecb56b7ea8c35b7b881175b"><div class="ttname"><a href="filaenc_8hpp.html#ac864866ceecb56b7ea8c35b7b881175b">inserir</a></div><div class="ttdeci">void inserir(FilaEnc *f, int item)</div><div class="ttdoc">Insere um novo elemento no final da fila. </div><div class="ttdef"><b>Definition:</b> filaenc.cpp:48</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.8
+</small></address>
+</body>
+</html>

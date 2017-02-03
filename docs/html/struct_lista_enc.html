@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.8"/>
-<title>Estruturas de Dados: Referência da Estrutura Noh</title>
+<title>Estruturas de Dados: Referência da Estrutura ListaEnc</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -45,64 +45,54 @@
   <div class="summary">
 <a href="#pub-attribs">Campos de Dados</a>  </div>
   <div class="headertitle">
-<div class="title">Referência da Estrutura Noh</div>  </div>
+<div class="title">Referência da Estrutura ListaEnc</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Declaração opaca da estrutura de um nó da fila.  
- <a href="struct_noh.html#details">Mais...</a></p>
+<p>Declaração opaca da estrutura de uma lista.  
+ <a href="struct_lista_enc.html#details">Mais...</a></p>
 
-<p><code>#include &lt;<a class="el" href="filaenc_8hpp_source.html">filaenc.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="listaenc_8hpp_source.html">listaenc.hpp</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Campos de Dados</h2></td></tr>
-<tr class="memitem:a02e491a383d28941868b142ff9f9e886"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_noh.html#a02e491a383d28941868b142ff9f9e886">item</a></td></tr>
-<tr class="separator:a02e491a383d28941868b142ff9f9e886"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a09e7c17bb26cf686d7ad0c4b9a3a06b2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_noh.html">Noh</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_noh.html#a09e7c17bb26cf686d7ad0c4b9a3a06b2">prox</a></td></tr>
-<tr class="separator:a09e7c17bb26cf686d7ad0c4b9a3a06b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af0c19d2b23cf0d066007765d74369b47"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_noh.html">Noh</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_lista_enc.html#af0c19d2b23cf0d066007765d74369b47">inicio</a></td></tr>
+<tr class="separator:af0c19d2b23cf0d066007765d74369b47"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76145a5161e42fad3d104769414503c6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_lista_enc.html#a76145a5161e42fad3d104769414503c6">tam</a></td></tr>
+<tr class="separator:a76145a5161e42fad3d104769414503c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Descrição Detalhada</h2>
-<div class="textblock"><p>Declaração opaca da estrutura de um nó da fila. </p>
-<p>Declaração opaca da estrutura de um nó da pilha.</p>
-<p>Declaração opaca da estrutura de um nó da lista.</p>
-<p>&lt; Necessário para uso da macro "assert" &lt; Necessário para uso do NULL</p>
-<p>&lt; Necessário para uso da macro "assert". &lt; Necessário para uso do NULL.</p>
-<p>Isso significa que os detalhes de implementação desta estrutura estão escondidos do usuário do TAD. A definição da estrutura <a class="el" href="struct_noh.html" title="Declaração opaca da estrutura de um nó da fila. ">Noh</a> encontra-se no arquivo </p>
+<div class="textblock"><p>Declaração opaca da estrutura de uma lista. </p>
+<p>Isso significa que os detalhes de implementação desta estrutura estão escondidos do usuário do TAD. A definição da estrutura <a class="el" href="struct_lista_enc.html" title="Declaração opaca da estrutura de uma lista. ">ListaEnc</a> encontra-se no arquivo </p>
 </div><h2 class="groupheader">Campos</h2>
-<a class="anchor" id="a02e491a383d28941868b142ff9f9e886"></a>
+<a class="anchor" id="af0c19d2b23cf0d066007765d74369b47"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int item</td>
+          <td class="memname"><a class="el" href="struct_noh.html">Noh</a>* inicio</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Representa a informação a ser armazenada em cada nó da fila.</p>
-<p>Representa a informação a ser armazenada em cada nó da lista.</p>
-<p>Representa a informação a ser armazenada em cada nó da pilha. </p>
+<p>É um ponteiro para o início da lista. </p>
 
 </div>
 </div>
-<a class="anchor" id="a09e7c17bb26cf686d7ad0c4b9a3a06b2"></a>
+<a class="anchor" id="a76145a5161e42fad3d104769414503c6"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="struct_noh.html">Noh</a> * prox</td>
+          <td class="memname">int tam</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>É um ponteiro para o próximo nó da fila.</p>
-<p>É um ponteiro para o próximo nó da lista.</p>
-<p>É um ponteiro para o próximo nó da pilha. </p>
+<p>Representa a quantidade de elementos da lista. </p>
 
 </div>
 </div>
-<hr/>A documentação para esta estrutura foi gerada a partir dos seguintes arquivos:<ul>
-<li>eds/encadeada/<a class="el" href="filaenc_8cpp.html">filaenc.cpp</a></li>
+<hr/>A documentação para esta estrutura foi gerada a partir do seguinte arquivo:<ul>
 <li>eds/encadeada/<a class="el" href="listaenc_8cpp.html">listaenc.cpp</a></li>
-<li>eds/encadeada/<a class="el" href="pilhaenc_8cpp.html">pilhaenc.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
