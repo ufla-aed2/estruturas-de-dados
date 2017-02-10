@@ -69,7 +69,7 @@ ListaEnc* criar_lista();
  * 
  * \warning O programa será abortado, caso o ponteiro \p *li seja igual a \p NULL.
  */
-void liberar_lista(ListaEnc* f);
+void liberar_lista(ListaEnc* li);
 
 /** 
  * \brief Verifica se a lista está vazia. 
@@ -105,7 +105,7 @@ void liberar_lista(ListaEnc* f);
  * 
  * \warning O programa será abortado, caso o ponteiro \p *li seja igual a \p NULL.
 */
-bool estah_vazia(ListaEnc* f);
+bool estah_vazia(ListaEnc* li);
 
 /** 
  * \brief Insere um novo elemento em uma posição pré-determinada da lista.  
@@ -147,7 +147,7 @@ bool estah_vazia(ListaEnc* f);
  * \warning O programa será abortado, caso o ponteiro \p *li seja igual a \p NULL.
  * \warning O programa será abortado, caso o valor do parâmetro \p pos seja menor do que 0 ou maior do que TAM, onde TAM refere-se à qantidade de elementos da lista.
  */
-void inserir(ListaEnc* f, int item, int pos);
+void inserir(ListaEnc* li, int item, int pos);
 
 /** 
  * \brief Remove e retorna o elemento de uma posição pré-determinada da lista. 
@@ -194,7 +194,7 @@ void inserir(ListaEnc* f, int item, int pos);
  * 			caso a lista esteja vazia.
  * \warning O programa será abortado, caso o valor do parâmetro \p pos seja menor do que 0 ou maior do que TAM - 1, onde TAM refere-se à qantidade de elementos da lista.
  */
-int remover(ListaEnc* f, int pos);
+int remover(ListaEnc* li, int pos);
 
 /** 
  * \brief Apenas retorna o elemento de uma posição pré-determinada da lista. 
@@ -241,7 +241,7 @@ int remover(ListaEnc* f, int pos);
  * 			caso a lista esteja vazia.
  * \warning O programa será abortado, caso o valor do parâmetro \p pos seja menor do que 0 ou maior do que TAM - 1, onde TAM refere-se à qantidade de elementos da lista.
  */
-int obter_elemento(ListaEnc* f, int pos);
+int obter_elemento(ListaEnc* li, int pos);
 
 /** 
  * \brief Retorna a quantidade de elementos da lista. 
@@ -279,6 +279,6 @@ int obter_elemento(ListaEnc* f, int pos);
  * \warning O programa será abortado, caso o ponteiro \p *li seja igual a \p NULL ou
  * 			caso a lista esteja vazia.
  */
-int obter_tamanho(ListaEnc* f);
+int obter_tamanho(ListaEnc* li);
 
 #endif

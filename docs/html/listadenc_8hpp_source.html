@@ -1,0 +1,111 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.8"/>
+<title>Estruturas de Dados: Código-Fonte de eds/encadeada/listadenc.hpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Estruturas de Dados
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.8.8 -->
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Página&#160;Principal</span></a></li>
+      <li><a href="annotated.html"><span>Estruturas&#160;de&#160;Dados</span></a></li>
+      <li class="current"><a href="files.html"><span>Arquivos</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&#160;de&#160;Arquivos</span></a></li>
+      <li><a href="globals.html"><span>Globais</span></a></li>
+    </ul>
+  </div>
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_a3f2bd107d1269366d90e558a516eb2f.html">eds</a></li><li class="navelem"><a class="el" href="dir_48d38a9ac268f4d9f93bc0b064bb1e62.html">encadeada</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">listadenc.hpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="listadenc_8hpp.html">Vá para a documentação deste arquivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#ifndef LISTADENC_HPP</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#define LISTADENC_HPP</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">struct </span><a class="code" href="struct_lista_d_enc.html">ListaDEnc</a>;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="keyword">struct </span><a class="code" href="struct_d_noh.html">DNoh</a>;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<a class="code" href="struct_lista_d_enc.html">ListaDEnc</a>* <a class="code" href="listadenc_8hpp.html#a5ea7c738eadd3da6f4c86627bfdba950">criar_listad</a>();</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="keywordtype">void</span> <a class="code" href="listadenc_8hpp.html#aed0215bc00ace5a46fb0b7d82d7ac036">liberar_lista</a>(<a class="code" href="struct_lista_d_enc.html">ListaDEnc</a>* li);</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="listadenc_8hpp.html#a3063fa07c923dde963341067430fb51b">estah_vazia</a>(<a class="code" href="struct_lista_d_enc.html">ListaDEnc</a>* li);</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;<span class="keywordtype">void</span> <a class="code" href="listadenc_8hpp.html#adc4842f6c8536cdac1c7099b30bc3225">inserir</a>(<a class="code" href="struct_lista_d_enc.html">ListaDEnc</a>* li, <span class="keywordtype">int</span> <a class="code" href="struct_d_noh.html#a02e491a383d28941868b142ff9f9e886">item</a>, <span class="keywordtype">int</span> pos);</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;<span class="keywordtype">void</span> <a class="code" href="listadenc_8hpp.html#a5d6ed3f186c0b74be6f5a45b545d37d3">inserir_no_inicio</a>(<a class="code" href="struct_lista_d_enc.html">ListaDEnc</a>* li, <span class="keywordtype">int</span> <a class="code" href="struct_d_noh.html#a02e491a383d28941868b142ff9f9e886">item</a>);</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;</div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;<span class="keywordtype">void</span> <a class="code" href="listadenc_8hpp.html#af1ada73ba9f5f2f742f495549f95a72d">inserir_no_fim</a>(<a class="code" href="struct_lista_d_enc.html">ListaDEnc</a>* li, <span class="keywordtype">int</span> <a class="code" href="struct_d_noh.html#a02e491a383d28941868b142ff9f9e886">item</a>);</div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;</div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;<span class="keywordtype">int</span> <a class="code" href="listadenc_8hpp.html#a9ec3af67a6cff7325d40280def925f95">remover</a>(<a class="code" href="struct_lista_d_enc.html">ListaDEnc</a>* li, <span class="keywordtype">int</span> pos);</div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;</div>
+<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;<span class="keywordtype">int</span> <a class="code" href="listadenc_8hpp.html#a89375a242d67fceca25ca226e55051dd">remover_inicio</a>(<a class="code" href="struct_lista_d_enc.html">ListaDEnc</a>* li);</div>
+<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;</div>
+<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;<span class="keywordtype">int</span> <a class="code" href="listadenc_8hpp.html#a2e7cb923b723de7f05fcd00ab93350a3">remover_fim</a>(<a class="code" href="struct_lista_d_enc.html">ListaDEnc</a>* li);</div>
+<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;</div>
+<div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;<span class="keywordtype">int</span> <a class="code" href="listadenc_8hpp.html#aacfc3b18fd743bf080cb530d0288133e">obter_elemento</a>(<a class="code" href="struct_lista_d_enc.html">ListaDEnc</a>* li, <span class="keywordtype">int</span> pos);</div>
+<div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;</div>
+<div class="line"><a name="l00452"></a><span class="lineno">  452</span>&#160;<span class="keywordtype">int</span> <a class="code" href="listadenc_8hpp.html#a51cb9a29f7db91b43477d7abfac5010f">obter_inicio</a>(<a class="code" href="struct_lista_d_enc.html">ListaDEnc</a>* li);</div>
+<div class="line"><a name="l00453"></a><span class="lineno">  453</span>&#160;</div>
+<div class="line"><a name="l00496"></a><span class="lineno">  496</span>&#160;<span class="keywordtype">int</span> <a class="code" href="listadenc_8hpp.html#adee96a590d7a58310f0a996789470767">obter_fim</a>(<a class="code" href="struct_lista_d_enc.html">ListaDEnc</a>* li);</div>
+<div class="line"><a name="l00497"></a><span class="lineno">  497</span>&#160;</div>
+<div class="line"><a name="l00534"></a><span class="lineno">  534</span>&#160;<span class="keywordtype">int</span> <a class="code" href="listadenc_8hpp.html#a792ae02f4866ac469e44d9c98a6d76a8">obter_tamanho</a>(<a class="code" href="struct_lista_d_enc.html">ListaDEnc</a>* li);</div>
+<div class="line"><a name="l00535"></a><span class="lineno">  535</span>&#160;</div>
+<div class="line"><a name="l00536"></a><span class="lineno">  536</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="listadenc_8hpp_html_a5d6ed3f186c0b74be6f5a45b545d37d3"><div class="ttname"><a href="listadenc_8hpp.html#a5d6ed3f186c0b74be6f5a45b545d37d3">inserir_no_inicio</a></div><div class="ttdeci">void inserir_no_inicio(ListaDEnc *li, int item)</div><div class="ttdoc">Insere um novo elemento no início da lista. </div><div class="ttdef"><b>Definition:</b> listadenc.cpp:64</div></div>
+<div class="ttc" id="struct_d_noh_html"><div class="ttname"><a href="struct_d_noh.html">DNoh</a></div><div class="ttdoc">Declaração opaca da estrutura de um nó da lista. </div><div class="ttdef"><b>Definition:</b> listadenc.cpp:5</div></div>
+<div class="ttc" id="listadenc_8hpp_html_adee96a590d7a58310f0a996789470767"><div class="ttname"><a href="listadenc_8hpp.html#adee96a590d7a58310f0a996789470767">obter_fim</a></div><div class="ttdeci">int obter_fim(ListaDEnc *li)</div><div class="ttdoc">Apenas retorna o elemento do fim da lista. </div><div class="ttdef"><b>Definition:</b> listadenc.cpp:192</div></div>
+<div class="ttc" id="listadenc_8hpp_html_a792ae02f4866ac469e44d9c98a6d76a8"><div class="ttname"><a href="listadenc_8hpp.html#a792ae02f4866ac469e44d9c98a6d76a8">obter_tamanho</a></div><div class="ttdeci">int obter_tamanho(ListaDEnc *li)</div><div class="ttdoc">Retorna a quantidade de elementos da lista. </div><div class="ttdef"><b>Definition:</b> listadenc.cpp:219</div></div>
+<div class="ttc" id="listadenc_8hpp_html_af1ada73ba9f5f2f742f495549f95a72d"><div class="ttname"><a href="listadenc_8hpp.html#af1ada73ba9f5f2f742f495549f95a72d">inserir_no_fim</a></div><div class="ttdeci">void inserir_no_fim(ListaDEnc *li, int item)</div><div class="ttdoc">Insere um novo elemento no final da lista. </div><div class="ttdef"><b>Definition:</b> listadenc.cpp:79</div></div>
+<div class="ttc" id="listadenc_8hpp_html_a3063fa07c923dde963341067430fb51b"><div class="ttname"><a href="listadenc_8hpp.html#a3063fa07c923dde963341067430fb51b">estah_vazia</a></div><div class="ttdeci">bool estah_vazia(ListaDEnc *li)</div><div class="ttdoc">Verifica se a lista está vazia. </div><div class="ttdef"><b>Definition:</b> listadenc.cpp:45</div></div>
+<div class="ttc" id="listadenc_8hpp_html_a5ea7c738eadd3da6f4c86627bfdba950"><div class="ttname"><a href="listadenc_8hpp.html#a5ea7c738eadd3da6f4c86627bfdba950">criar_listad</a></div><div class="ttdeci">ListaDEnc * criar_listad()</div><div class="ttdoc">Cria dinamicamente uma lista vazia e retorna o endereço onde ela se encontra alocada. </div><div class="ttdef"><b>Definition:</b> listadenc.cpp:17</div></div>
+<div class="ttc" id="listadenc_8hpp_html_aed0215bc00ace5a46fb0b7d82d7ac036"><div class="ttname"><a href="listadenc_8hpp.html#aed0215bc00ace5a46fb0b7d82d7ac036">liberar_lista</a></div><div class="ttdeci">void liberar_lista(ListaDEnc *li)</div><div class="ttdoc">Libera o espaço de memória anteriormente reservado para a lista. </div><div class="ttdef"><b>Definition:</b> listadenc.cpp:30</div></div>
+<div class="ttc" id="listadenc_8hpp_html_a2e7cb923b723de7f05fcd00ab93350a3"><div class="ttname"><a href="listadenc_8hpp.html#a2e7cb923b723de7f05fcd00ab93350a3">remover_fim</a></div><div class="ttdeci">int remover_fim(ListaDEnc *li)</div><div class="ttdoc">Remove e retorna o elemento do fim da lista. </div><div class="ttdef"><b>Definition:</b> listadenc.cpp:138</div></div>
+<div class="ttc" id="listadenc_8hpp_html_adc4842f6c8536cdac1c7099b30bc3225"><div class="ttname"><a href="listadenc_8hpp.html#adc4842f6c8536cdac1c7099b30bc3225">inserir</a></div><div class="ttdeci">void inserir(ListaDEnc *li, int item, int pos)</div><div class="ttdoc">Insere um novo elemento em uma posição pré-determinada da lista. </div><div class="ttdef"><b>Definition:</b> listadenc.cpp:95</div></div>
+<div class="ttc" id="listadenc_8hpp_html_a51cb9a29f7db91b43477d7abfac5010f"><div class="ttname"><a href="listadenc_8hpp.html#a51cb9a29f7db91b43477d7abfac5010f">obter_inicio</a></div><div class="ttdeci">int obter_inicio(ListaDEnc *li)</div><div class="ttdoc">Apenas retorna o elemento do início da lista. </div><div class="ttdef"><b>Definition:</b> listadenc.cpp:185</div></div>
+<div class="ttc" id="listadenc_8hpp_html_aacfc3b18fd743bf080cb530d0288133e"><div class="ttname"><a href="listadenc_8hpp.html#aacfc3b18fd743bf080cb530d0288133e">obter_elemento</a></div><div class="ttdeci">int obter_elemento(ListaDEnc *li, int pos)</div><div class="ttdoc">Apenas retorna o elemento de uma posição pré-determinada da lista. </div><div class="ttdef"><b>Definition:</b> listadenc.cpp:199</div></div>
+<div class="ttc" id="listadenc_8hpp_html_a89375a242d67fceca25ca226e55051dd"><div class="ttname"><a href="listadenc_8hpp.html#a89375a242d67fceca25ca226e55051dd">remover_inicio</a></div><div class="ttdeci">int remover_inicio(ListaDEnc *li)</div><div class="ttdoc">Remove e retorna o elemento do início da lista. </div><div class="ttdef"><b>Definition:</b> listadenc.cpp:118</div></div>
+<div class="ttc" id="struct_d_noh_html_a02e491a383d28941868b142ff9f9e886"><div class="ttname"><a href="struct_d_noh.html#a02e491a383d28941868b142ff9f9e886">DNoh::item</a></div><div class="ttdeci">int item</div><div class="ttdef"><b>Definition:</b> listadenc.cpp:6</div></div>
+<div class="ttc" id="struct_lista_d_enc_html"><div class="ttname"><a href="struct_lista_d_enc.html">ListaDEnc</a></div><div class="ttdoc">Declaração opaca da estrutura de uma lista. </div><div class="ttdef"><b>Definition:</b> listadenc.cpp:11</div></div>
+<div class="ttc" id="listadenc_8hpp_html_a9ec3af67a6cff7325d40280def925f95"><div class="ttname"><a href="listadenc_8hpp.html#a9ec3af67a6cff7325d40280def925f95">remover</a></div><div class="ttdeci">int remover(ListaDEnc *li, int pos)</div><div class="ttdoc">Remove e retorna o elemento de uma posição pré-determinada da lista. </div><div class="ttdef"><b>Definition:</b> listadenc.cpp:158</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.8
+</small></address>
+</body>
+</html>

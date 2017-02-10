@@ -12,7 +12,7 @@ As seguintes EDs são apresentadas neste documento:
 - Pilha: implementação com arranjos (pilhavet.hpp) e implementação com estruturas encadeadas (pilhaenc.hpp).
 - Fila: implementação com arranjos (filavet.hpp) e implementação com estruturas encadeadas (filaenc.hpp).
 - Fila Dupla: implementação com arranjos (filadvet.hpp).
-- Lista: implementação com arranjos (listavet.hpp) e implementação com estruturas simplesmente encadeadas (listaenc.hpp).
+- Lista: implementação com arranjos (listavet.hpp) e implementação com estruturas simplesmente (listaenc.hpp) e duplamente (listadenc.hpp) encadeadas.
 
 A documentação das EDs descritas acima foi gerada por meio do software
 [Doxygen] (http://www.stack.nl/~dimitri/doxygen/) e pode ser visualizada 

@@ -1,0 +1,762 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.8"/>
+<title>Estruturas de Dados: Referência do Arquivo eds/encadeada/listadenc.hpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Estruturas de Dados
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.8.8 -->
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Página&#160;Principal</span></a></li>
+      <li><a href="annotated.html"><span>Estruturas&#160;de&#160;Dados</span></a></li>
+      <li class="current"><a href="files.html"><span>Arquivos</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&#160;de&#160;Arquivos</span></a></li>
+      <li><a href="globals.html"><span>Globais</span></a></li>
+    </ul>
+  </div>
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_a3f2bd107d1269366d90e558a516eb2f.html">eds</a></li><li class="navelem"><a class="el" href="dir_48d38a9ac268f4d9f93bc0b064bb1e62.html">encadeada</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Funções</a>  </div>
+  <div class="headertitle">
+<div class="title">Referência do Arquivo listadenc.hpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Interface do TAD <a class="el" href="struct_lista_d_enc.html" title="Declaração opaca da estrutura de uma lista. ">ListaDEnc</a>.  
+<a href="#details">Mais...</a></p>
+
+<p><a href="listadenc_8hpp_source.html">Vá para o código-fonte deste arquivo.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Funções</h2></td></tr>
+<tr class="memitem:a5ea7c738eadd3da6f4c86627bfdba950"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_lista_d_enc.html">ListaDEnc</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="listadenc_8hpp.html#a5ea7c738eadd3da6f4c86627bfdba950">criar_listad</a> ()</td></tr>
+<tr class="memdesc:a5ea7c738eadd3da6f4c86627bfdba950"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cria dinamicamente uma lista vazia e retorna o endereço onde ela se encontra alocada.  <a href="#a5ea7c738eadd3da6f4c86627bfdba950">Mais...</a><br /></td></tr>
+<tr class="separator:a5ea7c738eadd3da6f4c86627bfdba950"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed0215bc00ace5a46fb0b7d82d7ac036"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="listadenc_8hpp.html#aed0215bc00ace5a46fb0b7d82d7ac036">liberar_lista</a> (<a class="el" href="struct_lista_d_enc.html">ListaDEnc</a> *li)</td></tr>
+<tr class="memdesc:aed0215bc00ace5a46fb0b7d82d7ac036"><td class="mdescLeft">&#160;</td><td class="mdescRight">Libera o espaço de memória anteriormente reservado para a lista.  <a href="#aed0215bc00ace5a46fb0b7d82d7ac036">Mais...</a><br /></td></tr>
+<tr class="separator:aed0215bc00ace5a46fb0b7d82d7ac036"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3063fa07c923dde963341067430fb51b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="listadenc_8hpp.html#a3063fa07c923dde963341067430fb51b">estah_vazia</a> (<a class="el" href="struct_lista_d_enc.html">ListaDEnc</a> *li)</td></tr>
+<tr class="memdesc:a3063fa07c923dde963341067430fb51b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Verifica se a lista está vazia.  <a href="#a3063fa07c923dde963341067430fb51b">Mais...</a><br /></td></tr>
+<tr class="separator:a3063fa07c923dde963341067430fb51b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc4842f6c8536cdac1c7099b30bc3225"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="listadenc_8hpp.html#adc4842f6c8536cdac1c7099b30bc3225">inserir</a> (<a class="el" href="struct_lista_d_enc.html">ListaDEnc</a> *li, int item, int pos)</td></tr>
+<tr class="memdesc:adc4842f6c8536cdac1c7099b30bc3225"><td class="mdescLeft">&#160;</td><td class="mdescRight">Insere um novo elemento em uma posição pré-determinada da lista.  <a href="#adc4842f6c8536cdac1c7099b30bc3225">Mais...</a><br /></td></tr>
+<tr class="separator:adc4842f6c8536cdac1c7099b30bc3225"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d6ed3f186c0b74be6f5a45b545d37d3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="listadenc_8hpp.html#a5d6ed3f186c0b74be6f5a45b545d37d3">inserir_no_inicio</a> (<a class="el" href="struct_lista_d_enc.html">ListaDEnc</a> *li, int item)</td></tr>
+<tr class="memdesc:a5d6ed3f186c0b74be6f5a45b545d37d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Insere um novo elemento no início da lista.  <a href="#a5d6ed3f186c0b74be6f5a45b545d37d3">Mais...</a><br /></td></tr>
+<tr class="separator:a5d6ed3f186c0b74be6f5a45b545d37d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1ada73ba9f5f2f742f495549f95a72d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="listadenc_8hpp.html#af1ada73ba9f5f2f742f495549f95a72d">inserir_no_fim</a> (<a class="el" href="struct_lista_d_enc.html">ListaDEnc</a> *li, int item)</td></tr>
+<tr class="memdesc:af1ada73ba9f5f2f742f495549f95a72d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Insere um novo elemento no final da lista.  <a href="#af1ada73ba9f5f2f742f495549f95a72d">Mais...</a><br /></td></tr>
+<tr class="separator:af1ada73ba9f5f2f742f495549f95a72d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ec3af67a6cff7325d40280def925f95"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="listadenc_8hpp.html#a9ec3af67a6cff7325d40280def925f95">remover</a> (<a class="el" href="struct_lista_d_enc.html">ListaDEnc</a> *li, int pos)</td></tr>
+<tr class="memdesc:a9ec3af67a6cff7325d40280def925f95"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove e retorna o elemento de uma posição pré-determinada da lista.  <a href="#a9ec3af67a6cff7325d40280def925f95">Mais...</a><br /></td></tr>
+<tr class="separator:a9ec3af67a6cff7325d40280def925f95"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89375a242d67fceca25ca226e55051dd"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="listadenc_8hpp.html#a89375a242d67fceca25ca226e55051dd">remover_inicio</a> (<a class="el" href="struct_lista_d_enc.html">ListaDEnc</a> *li)</td></tr>
+<tr class="memdesc:a89375a242d67fceca25ca226e55051dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove e retorna o elemento do início da lista.  <a href="#a89375a242d67fceca25ca226e55051dd">Mais...</a><br /></td></tr>
+<tr class="separator:a89375a242d67fceca25ca226e55051dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e7cb923b723de7f05fcd00ab93350a3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="listadenc_8hpp.html#a2e7cb923b723de7f05fcd00ab93350a3">remover_fim</a> (<a class="el" href="struct_lista_d_enc.html">ListaDEnc</a> *li)</td></tr>
+<tr class="memdesc:a2e7cb923b723de7f05fcd00ab93350a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove e retorna o elemento do fim da lista.  <a href="#a2e7cb923b723de7f05fcd00ab93350a3">Mais...</a><br /></td></tr>
+<tr class="separator:a2e7cb923b723de7f05fcd00ab93350a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aacfc3b18fd743bf080cb530d0288133e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="listadenc_8hpp.html#aacfc3b18fd743bf080cb530d0288133e">obter_elemento</a> (<a class="el" href="struct_lista_d_enc.html">ListaDEnc</a> *li, int pos)</td></tr>
+<tr class="memdesc:aacfc3b18fd743bf080cb530d0288133e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Apenas retorna o elemento de uma posição pré-determinada da lista.  <a href="#aacfc3b18fd743bf080cb530d0288133e">Mais...</a><br /></td></tr>
+<tr class="separator:aacfc3b18fd743bf080cb530d0288133e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51cb9a29f7db91b43477d7abfac5010f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="listadenc_8hpp.html#a51cb9a29f7db91b43477d7abfac5010f">obter_inicio</a> (<a class="el" href="struct_lista_d_enc.html">ListaDEnc</a> *li)</td></tr>
+<tr class="memdesc:a51cb9a29f7db91b43477d7abfac5010f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Apenas retorna o elemento do início da lista.  <a href="#a51cb9a29f7db91b43477d7abfac5010f">Mais...</a><br /></td></tr>
+<tr class="separator:a51cb9a29f7db91b43477d7abfac5010f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adee96a590d7a58310f0a996789470767"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="listadenc_8hpp.html#adee96a590d7a58310f0a996789470767">obter_fim</a> (<a class="el" href="struct_lista_d_enc.html">ListaDEnc</a> *li)</td></tr>
+<tr class="memdesc:adee96a590d7a58310f0a996789470767"><td class="mdescLeft">&#160;</td><td class="mdescRight">Apenas retorna o elemento do fim da lista.  <a href="#adee96a590d7a58310f0a996789470767">Mais...</a><br /></td></tr>
+<tr class="separator:adee96a590d7a58310f0a996789470767"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a792ae02f4866ac469e44d9c98a6d76a8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="listadenc_8hpp.html#a792ae02f4866ac469e44d9c98a6d76a8">obter_tamanho</a> (<a class="el" href="struct_lista_d_enc.html">ListaDEnc</a> *li)</td></tr>
+<tr class="memdesc:a792ae02f4866ac469e44d9c98a6d76a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retorna a quantidade de elementos da lista.  <a href="#a792ae02f4866ac469e44d9c98a6d76a8">Mais...</a><br /></td></tr>
+<tr class="separator:a792ae02f4866ac469e44d9c98a6d76a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Descrição Detalhada</h2>
+<div class="textblock"><p>Interface do TAD <a class="el" href="struct_lista_d_enc.html" title="Declaração opaca da estrutura de uma lista. ">ListaDEnc</a>. </p>
+<dl class="section author"><dt>Autor</dt><dd>Prof. Paulo Afonso (<a href="#" onclick="location.href='mai'+'lto:'+'pau'+'lo'+'a.j'+'un'+'ior'+'@d'+'cc.'+'uf'+'la.'+'br'; return false;">paulo<span style="display: none;">.nosp@m.</span>a.ju<span style="display: none;">.nosp@m.</span>nior@<span style="display: none;">.nosp@m.</span>dcc.<span style="display: none;">.nosp@m.</span>ufla.<span style="display: none;">.nosp@m.</span>br</a>) </dd></dl>
+<dl class="section date"><dt>Data</dt><dd>Fevereiro, 2017 Disponibiliza as funções necessárias para manipulação da estrutura de dados Lista Duplamente Encadeada. </dd></dl>
+</div><h2 class="groupheader">Funções</h2>
+<a class="anchor" id="a5ea7c738eadd3da6f4c86627bfdba950"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_lista_d_enc.html">ListaDEnc</a>* criar_listad </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Cria dinamicamente uma lista vazia e retorna o endereço onde ela se encontra alocada. </p>
+<p>Exemplo de uso: </p><div class="fragment"><div class="line"><span class="preprocessor">#include&lt;cstdlib&gt;</span></div>
+<div class="line"><span class="preprocessor">#include &quot;<a class="code" href="listadenc_8hpp.html">listadenc.hpp</a>&quot;</span></div>
+<div class="line"></div>
+<div class="line"><span class="keywordtype">int</span> main() {</div>
+<div class="line">    <a class="code" href="struct_lista_d_enc.html">ListaDEnc</a> *li = <a class="code" href="listadenc_8cpp.html#a5ea7c738eadd3da6f4c86627bfdba950">criar_listad</a>();</div>
+<div class="line">    <span class="keywordflow">return</span> EXIT_SUCCESS;</div>
+<div class="line">}  </div>
+</div><!-- fragment --><dl class="section return"><dt>Retorna</dt><dd>O endereço de memória da lista alocada dinamicamente. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a3063fa07c923dde963341067430fb51b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool estah_vazia </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_lista_d_enc.html">ListaDEnc</a> *&#160;</td>
+          <td class="paramname"><em>li</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Verifica se a lista está vazia. </p>
+<p>Exemplo de uso: </p><div class="fragment"><div class="line"><span class="preprocessor">#include&lt;cstdlib&gt;</span></div>
+<div class="line"><span class="preprocessor">#include&lt;iostream&gt;</span></div>
+<div class="line"><span class="preprocessor">#include &quot;<a class="code" href="listadenc_8hpp.html">listadenc.hpp</a>&quot;</span></div>
+<div class="line"></div>
+<div class="line"><span class="keyword">using namespace </span><a class="code" href="namespacestd.html">std</a>;</div>
+<div class="line"></div>
+<div class="line"><span class="keywordtype">int</span> main() {</div>
+<div class="line">    <a class="code" href="struct_lista_d_enc.html">ListaDEnc</a> *li = <a class="code" href="listadenc_8cpp.html#a5ea7c738eadd3da6f4c86627bfdba950">criar_listad</a>();</div>
+<div class="line">    <span class="keywordflow">if</span> (<a class="code" href="filadvet_8cpp.html#aaccf062f5ae84e95537c1d7b961290a3">estah_vazia</a>(li)) {</div>
+<div class="line">        cout &lt;&lt; <span class="stringliteral">&quot;Deu certo!&quot;</span> &lt;&lt; endl;</div>
+<div class="line">    }</div>
+<div class="line">    <a class="code" href="listavet_8cpp.html#a0944a8257666082bfe83f8afa7982798">liberar_lista</a>(li);</div>
+<div class="line">    <span class="keywordflow">return</span> EXIT_SUCCESS;</div>
+<div class="line">}  </div>
+</div><!-- fragment --><p>Saída esperada: </p><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;Deu certo!</div>
+</div><!-- fragment --><dl class="section pre"><dt>Pré-Condição</dt><dd>O ponteiro <code>*li</code> deve ser diferente de <code>NULL</code>.</dd></dl>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">*li</td><td>representa um ponteiro para a lista cuja situação será consultada.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd><code>true</code>, se a lista estiver vazia e <code>false</code>, caso contrário.</dd></dl>
+<dl class="section warning"><dt>Aviso</dt><dd>O programa será abortado, caso o ponteiro <code>*li</code> seja igual a <code>NULL</code>. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="adc4842f6c8536cdac1c7099b30bc3225"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void inserir </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_lista_d_enc.html">ListaDEnc</a> *&#160;</td>
+          <td class="paramname"><em>li</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>item</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>pos</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Insere um novo elemento em uma posição pré-determinada da lista. </p>
+<p>Exemplo de uso: </p><div class="fragment"><div class="line"><span class="preprocessor">#include&lt;cstdlib&gt;</span></div>
+<div class="line"><span class="preprocessor">#include&lt;iostream&gt;</span></div>
+<div class="line"><span class="preprocessor">#include &quot;<a class="code" href="listadenc_8hpp.html">listadenc.hpp</a>&quot;</span></div>
+<div class="line"></div>
+<div class="line"><span class="keyword">using namespace </span><a class="code" href="namespacestd.html">std</a>;</div>
+<div class="line"></div>
+<div class="line"><span class="keywordtype">int</span> main() {</div>
+<div class="line">    <a class="code" href="struct_lista_d_enc.html">ListaDEnc</a> *li = <a class="code" href="listadenc_8cpp.html#a5ea7c738eadd3da6f4c86627bfdba950">criar_listad</a>();</div>
+<div class="line">    <a class="code" href="filavet_8cpp.html#a202344af135a37d6c24323e97cef2c7b">inserir</a>(f, 2, 0);</div>
+<div class="line">    <a class="code" href="filavet_8cpp.html#a202344af135a37d6c24323e97cef2c7b">inserir</a>(f, 4, 1); </div>
+<div class="line">    <span class="keywordflow">if</span> (!<a class="code" href="filadvet_8cpp.html#aaccf062f5ae84e95537c1d7b961290a3">estah_vazia</a>(li)) {</div>
+<div class="line">        cout &lt;&lt; <span class="stringliteral">&quot;Deu certo!&quot;</span> &lt;&lt; endl;</div>
+<div class="line">    }</div>
+<div class="line">    <a class="code" href="listavet_8cpp.html#a0944a8257666082bfe83f8afa7982798">liberar_lista</a>(li);</div>
+<div class="line">    <span class="keywordflow">return</span> EXIT_SUCCESS;</div>
+<div class="line">}  </div>
+</div><!-- fragment --><p>Saída esperada: </p><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;Deu certo!</div>
+</div><!-- fragment --><dl class="section pre"><dt>Pré-Condição</dt><dd>O ponteiro <code>*li</code> deve ser diferente de <code>NULL</code>.</dd></dl>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">*li</td><td>representa um ponteiro para a lista onde o elemento será inserido. </td></tr>
+    <tr><td class="paramname">item</td><td>representa o item a ser inserido na lista. </td></tr>
+    <tr><td class="paramname">pos</td><td>representa a posição onde o elemento será inserido na lista, sendo 0 a posição inicial da lista e TAM a posição, onde TAM refere-se à qantidade de elementos da lista.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>void</dd></dl>
+<dl class="section warning"><dt>Aviso</dt><dd>O programa será abortado, caso o ponteiro <code>*li</code> seja igual a <code>NULL</code>. </dd>
+<dd>
+O programa será abortado, caso o valor do parâmetro <code>pos</code> seja menor do que 0 ou maior do que TAM, onde TAM refere-se à qantidade de elementos da lista. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="af1ada73ba9f5f2f742f495549f95a72d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void inserir_no_fim </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_lista_d_enc.html">ListaDEnc</a> *&#160;</td>
+          <td class="paramname"><em>li</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>item</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Insere um novo elemento no final da lista. </p>
+<p>Exemplo de uso: </p><div class="fragment"><div class="line"><span class="preprocessor">#include&lt;cstdlib&gt;</span></div>
+<div class="line"><span class="preprocessor">#include&lt;iostream&gt;</span></div>
+<div class="line"><span class="preprocessor">#include &quot;<a class="code" href="listadenc_8hpp.html">listadenc.hpp</a>&quot;</span></div>
+<div class="line"></div>
+<div class="line"><span class="keyword">using namespace </span><a class="code" href="namespacestd.html">std</a>;</div>
+<div class="line"></div>
+<div class="line"><span class="keywordtype">int</span> main() {</div>
+<div class="line">    <a class="code" href="struct_lista_d_enc.html">ListaDEnc</a> *li = <a class="code" href="listadenc_8cpp.html#a5ea7c738eadd3da6f4c86627bfdba950">criar_listad</a>();</div>
+<div class="line">    <a class="code" href="filadvet_8cpp.html#aed14de21f590ffb7057f33dc283bd02e">inserir_no_fim</a>(f, 2);</div>
+<div class="line">    <span class="keywordflow">if</span> (!<a class="code" href="filadvet_8cpp.html#aaccf062f5ae84e95537c1d7b961290a3">estah_vazia</a>(li)) {</div>
+<div class="line">        cout &lt;&lt; <span class="stringliteral">&quot;Deu certo!&quot;</span> &lt;&lt; endl;</div>
+<div class="line">    }</div>
+<div class="line">    <a class="code" href="listavet_8cpp.html#a0944a8257666082bfe83f8afa7982798">liberar_lista</a>(li);</div>
+<div class="line">    <span class="keywordflow">return</span> EXIT_SUCCESS;</div>
+<div class="line">}  </div>
+</div><!-- fragment --><p>Saída esperada: </p><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;Deu certo!</div>
+</div><!-- fragment --><dl class="section pre"><dt>Pré-Condição</dt><dd>O ponteiro <code>*li</code> deve ser diferente de <code>NULL</code>.</dd></dl>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">*li</td><td>representa um ponteiro para a lista onde o elemento será inserido. </td></tr>
+    <tr><td class="paramname">item</td><td>representa o item a ser inserido na lista.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>void</dd></dl>
+<dl class="section warning"><dt>Aviso</dt><dd>O programa será abortado, caso o ponteiro <code>*li</code> seja igual a <code>NULL</code>. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a5d6ed3f186c0b74be6f5a45b545d37d3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void inserir_no_inicio </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_lista_d_enc.html">ListaDEnc</a> *&#160;</td>
+          <td class="paramname"><em>li</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>item</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Insere um novo elemento no início da lista. </p>
+<p>Exemplo de uso: </p><div class="fragment"><div class="line"><span class="preprocessor">#include&lt;cstdlib&gt;</span></div>
+<div class="line"><span class="preprocessor">#include&lt;iostream&gt;</span></div>
+<div class="line"><span class="preprocessor">#include &quot;<a class="code" href="listadenc_8hpp.html">listadenc.hpp</a>&quot;</span></div>
+<div class="line"></div>
+<div class="line"><span class="keyword">using namespace </span><a class="code" href="namespacestd.html">std</a>;</div>
+<div class="line"></div>
+<div class="line"><span class="keywordtype">int</span> main() {</div>
+<div class="line">    <a class="code" href="struct_lista_d_enc.html">ListaDEnc</a> *li = <a class="code" href="listadenc_8cpp.html#a5ea7c738eadd3da6f4c86627bfdba950">criar_listad</a>();</div>
+<div class="line">    <a class="code" href="filadvet_8cpp.html#a6fc690c54c439b5c9cf1d575aa065a43">inserir_no_inicio</a>(f, 2);</div>
+<div class="line">    <span class="keywordflow">if</span> (!<a class="code" href="filadvet_8cpp.html#aaccf062f5ae84e95537c1d7b961290a3">estah_vazia</a>(li)) {</div>
+<div class="line">        cout &lt;&lt; <span class="stringliteral">&quot;Deu certo!&quot;</span> &lt;&lt; endl;</div>
+<div class="line">    }</div>
+<div class="line">    <a class="code" href="listavet_8cpp.html#a0944a8257666082bfe83f8afa7982798">liberar_lista</a>(li);</div>
+<div class="line">    <span class="keywordflow">return</span> EXIT_SUCCESS;</div>
+<div class="line">}  </div>
+</div><!-- fragment --><p>Saída esperada: </p><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;Deu certo!</div>
+</div><!-- fragment --><dl class="section pre"><dt>Pré-Condição</dt><dd>O ponteiro <code>*li</code> deve ser diferente de <code>NULL</code>.</dd></dl>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">*li</td><td>representa um ponteiro para a lista onde o elemento será inserido. </td></tr>
+    <tr><td class="paramname">item</td><td>representa o item a ser inserido na lista.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>void</dd></dl>
+<dl class="section warning"><dt>Aviso</dt><dd>O programa será abortado, caso o ponteiro <code>*li</code> seja igual a <code>NULL</code>. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="aed0215bc00ace5a46fb0b7d82d7ac036"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void liberar_lista </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_lista_d_enc.html">ListaDEnc</a> *&#160;</td>
+          <td class="paramname"><em>li</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Libera o espaço de memória anteriormente reservado para a lista. </p>
+<p>Exemplo de uso: </p><div class="fragment"><div class="line"><span class="preprocessor">#include&lt;cstdlib&gt;</span></div>
+<div class="line"><span class="preprocessor">#include &quot;<a class="code" href="listadenc_8hpp.html">listadenc.hpp</a>&quot;</span></div>
+<div class="line"></div>
+<div class="line"><span class="keywordtype">int</span> main() {</div>
+<div class="line">    <a class="code" href="struct_lista_d_enc.html">ListaDEnc</a> *li = <a class="code" href="listadenc_8cpp.html#a5ea7c738eadd3da6f4c86627bfdba950">criar_listad</a>();</div>
+<div class="line">    <a class="code" href="listavet_8cpp.html#a0944a8257666082bfe83f8afa7982798">liberar_lista</a>(li);</div>
+<div class="line">    <span class="keywordflow">return</span> EXIT_SUCCESS;</div>
+<div class="line">}  </div>
+</div><!-- fragment --><dl class="section pre"><dt>Pré-Condição</dt><dd>O ponteiro <code>*li</code> deve ser diferente de <code>NULL</code>.</dd></dl>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">*li</td><td>representa um ponteiro para a lista a ser liberada da memória.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>void</dd></dl>
+<dl class="section warning"><dt>Aviso</dt><dd>O programa será abortado, caso o ponteiro <code>*li</code> seja igual a <code>NULL</code>. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="aacfc3b18fd743bf080cb530d0288133e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int obter_elemento </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_lista_d_enc.html">ListaDEnc</a> *&#160;</td>
+          <td class="paramname"><em>li</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>pos</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Apenas retorna o elemento de uma posição pré-determinada da lista. </p>
+<p>Exemplo de uso: </p><div class="fragment"><div class="line"><span class="preprocessor">#include&lt;cstdlib&gt;</span></div>
+<div class="line"><span class="preprocessor">#include&lt;iostream&gt;</span></div>
+<div class="line"><span class="preprocessor">#include &quot;<a class="code" href="listadenc_8hpp.html">listadenc.hpp</a>&quot;</span></div>
+<div class="line"></div>
+<div class="line"><span class="keyword">using namespace </span><a class="code" href="namespacestd.html">std</a>;</div>
+<div class="line"></div>
+<div class="line"><span class="keywordtype">int</span> main() {</div>
+<div class="line">    <a class="code" href="struct_lista_d_enc.html">ListaDEnc</a> *li = <a class="code" href="listadenc_8cpp.html#a5ea7c738eadd3da6f4c86627bfdba950">criar_listad</a>();</div>
+<div class="line">    <a class="code" href="filavet_8cpp.html#a202344af135a37d6c24323e97cef2c7b">inserir</a>(f, 1, 0);</div>
+<div class="line">    <a class="code" href="filavet_8cpp.html#a202344af135a37d6c24323e97cef2c7b">inserir</a>(f, 3, 1);</div>
+<div class="line">    <a class="code" href="filavet_8cpp.html#a202344af135a37d6c24323e97cef2c7b">inserir</a>(f, 2, 1);</div>
+<div class="line">    <span class="keywordflow">while</span> (!<a class="code" href="filadvet_8cpp.html#aaccf062f5ae84e95537c1d7b961290a3">estah_vazia</a>(li)) {</div>
+<div class="line">        cout &lt;&lt; <a class="code" href="filadvet_8cpp.html#a777986e815ca5f2975fcf670e5e33278">obter_inicio</a>(li, 0) &lt;&lt; endl;</div>
+<div class="line">        <a class="code" href="filavet_8cpp.html#a254f02d2dc7266e0054e1fe96bf3aa53">remover</a>(li, 0);</div>
+<div class="line">    }</div>
+<div class="line">    <a class="code" href="listavet_8cpp.html#a0944a8257666082bfe83f8afa7982798">liberar_lista</a>(li);</div>
+<div class="line">    <span class="keywordflow">return</span> EXIT_SUCCESS;</div>
+<div class="line">}  </div>
+</div><!-- fragment --><p>Saída esperada:</p>
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;1</div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;2</div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;3</div>
+</div><!-- fragment --><dl class="section pre"><dt>Pré-Condição</dt><dd>O ponteiro <code>*li</code> deve ser diferente de <code>NULL</code>. </dd>
+<dd>
+A lista não deve estar vazia. </dd></dl>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">*li</td><td>representa um ponteiro para a lista de onde o elemento será obtido. </td></tr>
+    <tr><td class="paramname">pos</td><td>representa a posição do elemento a ser retornado na lista, sendo 0 a posição do primeiro elemento da lista e TAM - 1 a posição do último, onde TAM refere-se à qantidade de elementos da lista.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>O elemento da posição <code>pos</code> da lista.</dd></dl>
+<dl class="section warning"><dt>Aviso</dt><dd>O programa será abortado, caso o ponteiro <code>*li</code> seja igual a <code>NULL</code> ou caso a lista esteja vazia. </dd>
+<dd>
+O programa será abortado, caso o valor do parâmetro <code>pos</code> seja menor do que 0 ou maior do que TAM - 1, onde TAM refere-se à qantidade de elementos da lista. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="adee96a590d7a58310f0a996789470767"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int obter_fim </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_lista_d_enc.html">ListaDEnc</a> *&#160;</td>
+          <td class="paramname"><em>li</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Apenas retorna o elemento do fim da lista. </p>
+<p>Exemplo de uso: </p><div class="fragment"><div class="line"><span class="preprocessor">#include&lt;cstdlib&gt;</span></div>
+<div class="line"><span class="preprocessor">#include&lt;iostream&gt;</span></div>
+<div class="line"><span class="preprocessor">#include &quot;<a class="code" href="listadenc_8hpp.html">listadenc.hpp</a>&quot;</span></div>
+<div class="line"></div>
+<div class="line"><span class="keyword">using namespace </span><a class="code" href="namespacestd.html">std</a>;</div>
+<div class="line"></div>
+<div class="line"><span class="keywordtype">int</span> main() {</div>
+<div class="line">    <a class="code" href="struct_lista_d_enc.html">ListaDEnc</a> *li = <a class="code" href="listadenc_8cpp.html#a5ea7c738eadd3da6f4c86627bfdba950">criar_listad</a>();</div>
+<div class="line">    <a class="code" href="filavet_8cpp.html#a202344af135a37d6c24323e97cef2c7b">inserir</a>(f, 1, 0);</div>
+<div class="line">    <a class="code" href="filavet_8cpp.html#a202344af135a37d6c24323e97cef2c7b">inserir</a>(f, 3, 1);</div>
+<div class="line">    <a class="code" href="filavet_8cpp.html#a202344af135a37d6c24323e97cef2c7b">inserir</a>(f, 2, 1);</div>
+<div class="line">    <span class="keywordflow">while</span> (!<a class="code" href="filadvet_8cpp.html#aaccf062f5ae84e95537c1d7b961290a3">estah_vazia</a>(li)) {</div>
+<div class="line">        cout &lt;&lt; <a class="code" href="filadvet_8cpp.html#ae326d1b7251d360ea4e3f44542321f43">obter_fim</a>(li) &lt;&lt; endl;</div>
+<div class="line">        <a class="code" href="listadenc_8cpp.html#a76c7f259e77b0ef0fc4061a3381c55fc">remover_inicio</a>(li);</div>
+<div class="line">    }</div>
+<div class="line">    <a class="code" href="listavet_8cpp.html#a0944a8257666082bfe83f8afa7982798">liberar_lista</a>(li);</div>
+<div class="line">    <span class="keywordflow">return</span> EXIT_SUCCESS;</div>
+<div class="line">}  </div>
+</div><!-- fragment --><p>Saída esperada:</p>
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;3</div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;2</div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;1</div>
+</div><!-- fragment --><dl class="section pre"><dt>Pré-Condição</dt><dd>O ponteiro <code>*li</code> deve ser diferente de <code>NULL</code>. </dd>
+<dd>
+A lista não deve estar vazia. </dd></dl>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">*li</td><td>representa um ponteiro para a lista de onde o elemento será obtido.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>O elemento da posição <code>pos</code> da lista.</dd></dl>
+<dl class="section warning"><dt>Aviso</dt><dd>O programa será abortado, caso o ponteiro <code>*li</code> seja igual a <code>NULL</code> ou caso a lista esteja vazia. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a51cb9a29f7db91b43477d7abfac5010f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int obter_inicio </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_lista_d_enc.html">ListaDEnc</a> *&#160;</td>
+          <td class="paramname"><em>li</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Apenas retorna o elemento do início da lista. </p>
+<p>Exemplo de uso: </p><div class="fragment"><div class="line"><span class="preprocessor">#include&lt;cstdlib&gt;</span></div>
+<div class="line"><span class="preprocessor">#include&lt;iostream&gt;</span></div>
+<div class="line"><span class="preprocessor">#include &quot;<a class="code" href="listadenc_8hpp.html">listadenc.hpp</a>&quot;</span></div>
+<div class="line"></div>
+<div class="line"><span class="keyword">using namespace </span><a class="code" href="namespacestd.html">std</a>;</div>
+<div class="line"></div>
+<div class="line"><span class="keywordtype">int</span> main() {</div>
+<div class="line">    <a class="code" href="struct_lista_d_enc.html">ListaDEnc</a> *li = <a class="code" href="listadenc_8cpp.html#a5ea7c738eadd3da6f4c86627bfdba950">criar_listad</a>();</div>
+<div class="line">    <a class="code" href="filavet_8cpp.html#a202344af135a37d6c24323e97cef2c7b">inserir</a>(f, 1, 0);</div>
+<div class="line">    <a class="code" href="filavet_8cpp.html#a202344af135a37d6c24323e97cef2c7b">inserir</a>(f, 3, 1);</div>
+<div class="line">    <a class="code" href="filavet_8cpp.html#a202344af135a37d6c24323e97cef2c7b">inserir</a>(f, 2, 1);</div>
+<div class="line">    <span class="keywordflow">while</span> (!<a class="code" href="filadvet_8cpp.html#aaccf062f5ae84e95537c1d7b961290a3">estah_vazia</a>(li)) {</div>
+<div class="line">        cout &lt;&lt; <a class="code" href="filadvet_8cpp.html#a777986e815ca5f2975fcf670e5e33278">obter_inicio</a>(li) &lt;&lt; endl;</div>
+<div class="line">        <a class="code" href="listadenc_8cpp.html#a76c7f259e77b0ef0fc4061a3381c55fc">remover_inicio</a>(li);</div>
+<div class="line">    }</div>
+<div class="line">    <a class="code" href="listavet_8cpp.html#a0944a8257666082bfe83f8afa7982798">liberar_lista</a>(li);</div>
+<div class="line">    <span class="keywordflow">return</span> EXIT_SUCCESS;</div>
+<div class="line">}  </div>
+</div><!-- fragment --><p>Saída esperada:</p>
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;1</div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;2</div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;3</div>
+</div><!-- fragment --><dl class="section pre"><dt>Pré-Condição</dt><dd>O ponteiro <code>*li</code> deve ser diferente de <code>NULL</code>. </dd>
+<dd>
+A lista não deve estar vazia. </dd></dl>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">*li</td><td>representa um ponteiro para a lista de onde o elemento será obtido.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>O elemento da posição <code>pos</code> da lista.</dd></dl>
+<dl class="section warning"><dt>Aviso</dt><dd>O programa será abortado, caso o ponteiro <code>*li</code> seja igual a <code>NULL</code> ou caso a lista esteja vazia. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a792ae02f4866ac469e44d9c98a6d76a8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int obter_tamanho </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_lista_d_enc.html">ListaDEnc</a> *&#160;</td>
+          <td class="paramname"><em>li</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Retorna a quantidade de elementos da lista. </p>
+<p>Exemplo de uso: </p><div class="fragment"><div class="line"><span class="preprocessor">#include&lt;cstdlib&gt;</span></div>
+<div class="line"><span class="preprocessor">#include&lt;iostream&gt;</span></div>
+<div class="line"><span class="preprocessor">#include &quot;<a class="code" href="listadenc_8hpp.html">listadenc.hpp</a>&quot;</span></div>
+<div class="line"></div>
+<div class="line"><span class="keyword">using namespace </span><a class="code" href="namespacestd.html">std</a>;</div>
+<div class="line"></div>
+<div class="line"><span class="keywordtype">int</span> main() {</div>
+<div class="line">    <a class="code" href="struct_lista_d_enc.html">ListaDEnc</a> *li = <a class="code" href="listadenc_8cpp.html#a5ea7c738eadd3da6f4c86627bfdba950">criar_listad</a>();</div>
+<div class="line">    <a class="code" href="filavet_8cpp.html#a202344af135a37d6c24323e97cef2c7b">inserir</a>(f, 1, 0);</div>
+<div class="line">    <a class="code" href="filavet_8cpp.html#a202344af135a37d6c24323e97cef2c7b">inserir</a>(f, 3, 1);</div>
+<div class="line">    <a class="code" href="filavet_8cpp.html#a202344af135a37d6c24323e97cef2c7b">inserir</a>(f, 2, 1);</div>
+<div class="line">    cout &lt;&lt; <a class="code" href="listavet_8cpp.html#a63ceeb37358a8280eb1d6761fea98649">obter_tamanho</a>(li) &lt;&lt; endl;</div>
+<div class="line">    <a class="code" href="listavet_8cpp.html#a0944a8257666082bfe83f8afa7982798">liberar_lista</a>(li);</div>
+<div class="line">    <span class="keywordflow">return</span> EXIT_SUCCESS;</div>
+<div class="line">}  </div>
+</div><!-- fragment --><p>Saída esperada:</p>
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;3</div>
+</div><!-- fragment --><dl class="section pre"><dt>Pré-Condição</dt><dd>O ponteiro <code>*li</code> deve ser diferente de <code>NULL</code>. </dd></dl>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">*li</td><td>representa um ponteiro para a lista cuja quantidade de elementos será obtida.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>A quantidade de elementos existentes na lista.</dd></dl>
+<dl class="section warning"><dt>Aviso</dt><dd>O programa será abortado, caso o ponteiro <code>*li</code> seja igual a <code>NULL</code> ou caso a lista esteja vazia. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a9ec3af67a6cff7325d40280def925f95"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int remover </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_lista_d_enc.html">ListaDEnc</a> *&#160;</td>
+          <td class="paramname"><em>li</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>pos</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Remove e retorna o elemento de uma posição pré-determinada da lista. </p>
+<p>Exemplo de uso: </p><div class="fragment"><div class="line"><span class="preprocessor">#include&lt;cstdlib&gt;</span></div>
+<div class="line"><span class="preprocessor">#include&lt;iostream&gt;</span></div>
+<div class="line"><span class="preprocessor">#include &quot;<a class="code" href="listadenc_8hpp.html">listadenc.hpp</a>&quot;</span></div>
+<div class="line"></div>
+<div class="line"><span class="keyword">using namespace </span><a class="code" href="namespacestd.html">std</a>;</div>
+<div class="line"></div>
+<div class="line"><span class="keywordtype">int</span> main() {</div>
+<div class="line">    <a class="code" href="struct_lista_d_enc.html">ListaDEnc</a> *li = <a class="code" href="listadenc_8cpp.html#a5ea7c738eadd3da6f4c86627bfdba950">criar_listad</a>();</div>
+<div class="line">    <a class="code" href="filavet_8cpp.html#a202344af135a37d6c24323e97cef2c7b">inserir</a>(f, 1, 0);</div>
+<div class="line">    <a class="code" href="filavet_8cpp.html#a202344af135a37d6c24323e97cef2c7b">inserir</a>(f, 3, 1);</div>
+<div class="line">    <a class="code" href="filavet_8cpp.html#a202344af135a37d6c24323e97cef2c7b">inserir</a>(f, 2, 1);</div>
+<div class="line">    <span class="keywordflow">while</span> (!<a class="code" href="filadvet_8cpp.html#aaccf062f5ae84e95537c1d7b961290a3">estah_vazia</a>(li)) {</div>
+<div class="line">        cout &lt;&lt; <a class="code" href="filavet_8cpp.html#a254f02d2dc7266e0054e1fe96bf3aa53">remover</a>(li, 0) &lt;&lt; endl;</div>
+<div class="line">    }</div>
+<div class="line">    <a class="code" href="listavet_8cpp.html#a0944a8257666082bfe83f8afa7982798">liberar_lista</a>(li);</div>
+<div class="line">    <span class="keywordflow">return</span> EXIT_SUCCESS;</div>
+<div class="line">}  </div>
+</div><!-- fragment --><p>Saída esperada:</p>
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;1</div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;2</div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;3</div>
+</div><!-- fragment --><dl class="section pre"><dt>Pré-Condição</dt><dd>O ponteiro <code>*li</code> deve ser diferente de <code>NULL</code>. </dd>
+<dd>
+A lista não deve estar vazia.</dd></dl>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">*li</td><td>representa um ponteiro para a lista de onde o elemento será removido. </td></tr>
+    <tr><td class="paramname">pos</td><td>representa a posição do elemento a ser removido na lista, sendo 0 a posição do primeiro elemento da lista e TAM - 1 a posição do último, onde TAM refere-se à qantidade de elementos da lista.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>O elemento removido da posição <code>pos</code> da lista.</dd></dl>
+<dl class="section warning"><dt>Aviso</dt><dd>O programa será abortado, caso o ponteiro <code>*li</code> seja igual a <code>NULL</code> ou caso a lista esteja vazia. </dd>
+<dd>
+O programa será abortado, caso o valor do parâmetro <code>pos</code> seja menor do que 0 ou maior do que TAM - 1, onde TAM refere-se à qantidade de elementos da lista. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a2e7cb923b723de7f05fcd00ab93350a3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int remover_fim </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_lista_d_enc.html">ListaDEnc</a> *&#160;</td>
+          <td class="paramname"><em>li</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Remove e retorna o elemento do fim da lista. </p>
+<p>Exemplo de uso: </p><div class="fragment"><div class="line"><span class="preprocessor">#include&lt;cstdlib&gt;</span></div>
+<div class="line"><span class="preprocessor">#include&lt;iostream&gt;</span></div>
+<div class="line"><span class="preprocessor">#include &quot;<a class="code" href="listadenc_8hpp.html">listadenc.hpp</a>&quot;</span></div>
+<div class="line"></div>
+<div class="line"><span class="keyword">using namespace </span><a class="code" href="namespacestd.html">std</a>;</div>
+<div class="line"></div>
+<div class="line"><span class="keywordtype">int</span> main() {</div>
+<div class="line">    <a class="code" href="struct_lista_d_enc.html">ListaDEnc</a> *li = <a class="code" href="listadenc_8cpp.html#a5ea7c738eadd3da6f4c86627bfdba950">criar_listad</a>();</div>
+<div class="line">    <a class="code" href="filavet_8cpp.html#a202344af135a37d6c24323e97cef2c7b">inserir</a>(f, 1, 0);</div>
+<div class="line">    <a class="code" href="filavet_8cpp.html#a202344af135a37d6c24323e97cef2c7b">inserir</a>(f, 3, 1);</div>
+<div class="line">    <a class="code" href="filavet_8cpp.html#a202344af135a37d6c24323e97cef2c7b">inserir</a>(f, 2, 1);</div>
+<div class="line">    <span class="keywordflow">while</span> (!<a class="code" href="filadvet_8cpp.html#aaccf062f5ae84e95537c1d7b961290a3">estah_vazia</a>(li)) {</div>
+<div class="line">        cout &lt;&lt; <a class="code" href="listadenc_8cpp.html#a863203ba75acbdc564878fd662518800">remover_fim</a>(li) &lt;&lt; endl;</div>
+<div class="line">    }</div>
+<div class="line">    <a class="code" href="listavet_8cpp.html#a0944a8257666082bfe83f8afa7982798">liberar_lista</a>(li);</div>
+<div class="line">    <span class="keywordflow">return</span> EXIT_SUCCESS;</div>
+<div class="line">}  </div>
+</div><!-- fragment --><p>Saída esperada:</p>
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;3</div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;2</div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;1</div>
+</div><!-- fragment --><dl class="section pre"><dt>Pré-Condição</dt><dd>O ponteiro <code>*li</code> deve ser diferente de <code>NULL</code>. </dd>
+<dd>
+A lista não deve estar vazia.</dd></dl>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">*li</td><td>representa um ponteiro para a lista de onde o elemento será removido.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>O elemento removido da posição <code>pos</code> da lista.</dd></dl>
+<dl class="section warning"><dt>Aviso</dt><dd>O programa será abortado, caso o ponteiro <code>*li</code> seja igual a <code>NULL</code> ou caso a lista esteja vazia. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a89375a242d67fceca25ca226e55051dd"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int remover_inicio </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_lista_d_enc.html">ListaDEnc</a> *&#160;</td>
+          <td class="paramname"><em>li</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Remove e retorna o elemento do início da lista. </p>
+<p>Exemplo de uso: </p><div class="fragment"><div class="line"><span class="preprocessor">#include&lt;cstdlib&gt;</span></div>
+<div class="line"><span class="preprocessor">#include&lt;iostream&gt;</span></div>
+<div class="line"><span class="preprocessor">#include &quot;<a class="code" href="listadenc_8hpp.html">listadenc.hpp</a>&quot;</span></div>
+<div class="line"></div>
+<div class="line"><span class="keyword">using namespace </span><a class="code" href="namespacestd.html">std</a>;</div>
+<div class="line"></div>
+<div class="line"><span class="keywordtype">int</span> main() {</div>
+<div class="line">    <a class="code" href="struct_lista_d_enc.html">ListaDEnc</a> *li = <a class="code" href="listadenc_8cpp.html#a5ea7c738eadd3da6f4c86627bfdba950">criar_listad</a>();</div>
+<div class="line">    <a class="code" href="filavet_8cpp.html#a202344af135a37d6c24323e97cef2c7b">inserir</a>(f, 1, 0);</div>
+<div class="line">    <a class="code" href="filavet_8cpp.html#a202344af135a37d6c24323e97cef2c7b">inserir</a>(f, 3, 1);</div>
+<div class="line">    <a class="code" href="filavet_8cpp.html#a202344af135a37d6c24323e97cef2c7b">inserir</a>(f, 2, 1);</div>
+<div class="line">    <span class="keywordflow">while</span> (!<a class="code" href="filadvet_8cpp.html#aaccf062f5ae84e95537c1d7b961290a3">estah_vazia</a>(li)) {</div>
+<div class="line">        cout &lt;&lt; <a class="code" href="listadenc_8cpp.html#a76c7f259e77b0ef0fc4061a3381c55fc">remover_inicio</a>(li) &lt;&lt; endl;</div>
+<div class="line">    }</div>
+<div class="line">    <a class="code" href="listavet_8cpp.html#a0944a8257666082bfe83f8afa7982798">liberar_lista</a>(li);</div>
+<div class="line">    <span class="keywordflow">return</span> EXIT_SUCCESS;</div>
+<div class="line">}  </div>
+</div><!-- fragment --><p>Saída esperada:</p>
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;1</div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;2</div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;3</div>
+</div><!-- fragment --><dl class="section pre"><dt>Pré-Condição</dt><dd>O ponteiro <code>*li</code> deve ser diferente de <code>NULL</code>. </dd>
+<dd>
+A lista não deve estar vazia.</dd></dl>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">*li</td><td>representa um ponteiro para a lista de onde o elemento será removido.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>O elemento removido da posição <code>pos</code> da lista.</dd></dl>
+<dl class="section warning"><dt>Aviso</dt><dd>O programa será abortado, caso o ponteiro <code>*li</code> seja igual a <code>NULL</code> ou caso a lista esteja vazia. </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.8
+</small></address>
+</body>
+</html>
