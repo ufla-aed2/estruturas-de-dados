@@ -108,8 +108,8 @@ void inserir(ListaDEnc* lista, int item, int pos) {
         }
 
         DNoh* novo_noh = criar_noh(item, aux->ant, aux);
-        aux->ant = novo_noh;
         aux->ant->prox = novo_noh; 
+        aux->ant = novo_noh;
         
         lista->tam++;
     }
