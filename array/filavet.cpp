@@ -10,16 +10,6 @@ struct FilaVet {
 	int fim; /**< Variável que indica a próxima posição vazia da fila. */
 };
 
-/* 
- * Retorna o próximo valor do índice i, de forma circular. 
- * Ou seja, se i == TAM_MAX - 1, retorna 0. Caso contrário, retorna i + 1.
- * A palavra-chave "static" na assinatura desta função garante que ela só estará disponível
- * para uso dentro deste arquivo.
- */
-static int incrementar(int i) {
-	return ((i + 1) % TAM_MAX);
-}
-
 FilaVet* criar_fila() {
 	/* 
 	 * Caso não seja possível alocar o espaço solicitado, o próprio operador "new"
@@ -46,8 +36,13 @@ void liberar_fila(FilaVet* fila) {
 bool estah_cheia(FilaVet* fila) {
 	assert(fila != NULL);	
     
+	/* Retorna o próximo valor do índice fila->fim, de forma circular. 
+	 * Ou seja, se fila->fim == TAM_MAX - 1, retorna 0. Caso contrário, retorna fila->fim + 1. 
+	 */
+    int novo_fim = (fila->fim + 1) % TAM_MAX;
+    
     /* Para a fila ser considerada cheia, o incremento de seu índice fim deve ser igual ao seu índice inicio */ 
-	return (incrementar(fila->fim) == fila->inicio);
+	return (novo_fim == fila->inicio);
 }
 
 bool estah_vazia(FilaVet* fila) {
@@ -64,7 +59,7 @@ void inserir(FilaVet* fila, int item) {
 	fila->itens[fila->fim] = item;
 	
 	/* Atenção para o incremento circular do índice fim da fila */
-    fila->fim = incrementar(fila->fim);
+    fila->fim = (fila->fim + 1) % TAM_MAX;
 }
 
 int remover(FilaVet* fila) {
@@ -74,7 +69,7 @@ int remover(FilaVet* fila) {
 	int item = fila->itens[fila->inicio];
     
     /* Atenção para o incremento circular do índice inicio da fila */
-    fila->inicio = incrementar(fila->inicio);
+    fila->inicio = (fila->inicio + 1) % TAM_MAX;
     return item;    
 }
 
